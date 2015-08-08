@@ -1,10 +1,46 @@
 @import 'typographic'
 
--blue = hsl(194, 28%, 70%)
--black = hsl(200, 7%, 9%)
+$blue = hsl(174, 113%, 27%)
+$black = hsl(200, 7%, 9%)
+
+*
+	box-sizing: border-box
+	margin: 0
 
 html
-	background: -black
+	background: $black
 
 h1, h2, h3, h4, h5, h6, p
-	color: -blue
+	color: lighten($blue, 20%)
+
+header, footer
+	lost-center: 800px
+	height: 100px
+	background: lighten( $black, 10% ) 
+
+div
+	height: 100px
+	line-height: 100px
+	text-align: center
+
+.row > div
+		&:nth-of-type(1)
+			background: lighten( $black, 20% )
+		&:nth-of-type(2)
+			background: lighten( $black, 25% )
+		&:nth-of-type(3)
+			background: lighten( $black, 30% )
+		+above(400px)
+			lost-column: 1/3 0 0
+
+section
+	lost-center: 800px
+	
+	&:nth-of-type(1)
+		background: $blue
+	&:nth-of-type(2)
+		background: grey 
+	&:nth-of-type(3)
+		background: $blue
+	&:nth-of-type(4)
+		background: grey
