@@ -1,6 +1,6 @@
 @import 'typographic'
 
-$blue = hsl(174, 113%, 27%)
+$blue = hsl(0, 0%, 21%)
 $black = hsl(200, 7%, 9%)
 
 *
@@ -8,39 +8,155 @@ $black = hsl(200, 7%, 9%)
 	margin: 0
 
 html
-	background: $black
+	font-size: 100%
+
+body
+	font-family: "myriad-pro", Myriad Pro, sans-serif
+	font-weight: 400
 
 h1, h2, h3, h4, h5, h6, p
-	color: lighten($blue, 20%)
+	color: $blue
 
-header, footer
-	lost-center: 800px
-	height: 100px
-	background: lighten( $black, 10% ) 
+// Site Width
+.site-wrapper
+	lost-center: 1280px
 
-div
-	height: 100px
-	line-height: 100px
+// Header Height
+$hcol = 160px
+
+// Navigation
+nav.main-nav, nav.footer-nav
+	height: 100%
+	.button
+		padding-left: 30px
+		line-height: ($hcol / 2)
+		display: inline
+		white-space: nowrap
+		+above(737px)
+			line-height: $hcol
+	a
+		text-decoration: none
+		color: hsl(210, 93%, 62%) 
+		font-size: 18px
+		&:hover
+			color: darken(hsl(210, 100%, 44%), 10%)
+
+nav.main-nav
+	font-weight: 800
+	+above(1160px)
+		a
+			font-size: 22px
+			font-weight: 600
+
+nav.footer-nav
+	+above(850px)
+		text-align: right
+		padding-right: 30px 
+		a
+			font-weight: 400
+			&:after
+				font-weight: 100 
+				content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0|'
+			&:last-of-type:after
+				content: ''
+
+// Header Rows & Columns
+.hcol
+	height: $hcol
+
++above(1020px)
+	.logo-box
+		lost-column: 6/24 0 0
+	.menu-box
+		// column = 24 - (lost-column + cta-box) / 24
+		lost-column: (24 - ( 6 + 8 ))/24 0 0
+	.cta-box
+		lost-column 8/24 0 0
+
+// iPad sized = two column header
++between(730px, 1020px)
+	.logo-box,	.cta-box
+		lost-column: 1/2 0 0
+
+
+// Content Rows & Columns
+.row > .col
+	+above(680px)
+		lost-column: 1/3 0 0
+	// temporary column colors
+	&:nth-of-type(1)
+		background: lighten( $black, 20% )
+	&:nth-of-type(2)
+		background: lighten( $black, 25% )
+	&:nth-of-type(3)
+		background: lighten( $black, 30% )
+
+// Default Column Height
+$col-height = 280px
+.col
+	height: $col-height
+	line-height: $col-height
 	text-align: center
 
-.row > div
-		&:nth-of-type(1)
-			background: lighten( $black, 20% )
-		&:nth-of-type(2)
-			background: lighten( $black, 25% )
-		&:nth-of-type(3)
-			background: lighten( $black, 30% )
-		+above(400px)
-			lost-column: 1/3 0 0
+.site-wrapper > section
+	lost-utility: clearfix
 
-section
-	lost-center: 800px
-	
 	&:nth-of-type(1)
-		background: $blue
-	&:nth-of-type(2)
-		background: grey 
+		background: hsl(200, 7%, 9%)
 	&:nth-of-type(3)
-		background: $blue
-	&:nth-of-type(4)
-		background: grey
+		background: hsl(200, 7%, 9%)
+
+
+
+$logo-bg-color = hsl(196, 79%, 96%)
+$logo-fade-color = hsl(196, 79%, 100%)
+.logo-box
+	background: linear-gradient(left, $logo-fade-color, $logo-bg-color)
+	lost-align: center
+	img.logo
+		height: 99px
+		width: 267px
+
+.menu-box
+	background: hsl(196, 79%, 96%)
+	+below(1020px)
+		display: none
+
+
+img.droplets
+	size: 7px 37px
+	position: absolute
+	left: -9px
+
+// call to action
+.cta-box
+	background: hsl(206, 86%, 62%)
+	lost-align: middle-center
+	position: relative
+	article
+		width: 330px
+		text-align: center
+		+below(410px)
+			width: 290px
+	h4.call
+		font-size: 1.46em
+		color: white
+		margin: 0
+		+above(420px)
+			font-size: 1.6em
+	h4.phone
+		font-size: 2.6em
+		color: white
+		margin: 0
+		color: hsl(0, 0%, 20%)
+		+above(420px)
+			font-size: 3em
+		a:link
+			text-decoration: none
+			color: hsl(0, 0%, 20%)
+
+
+footer
+	min-height: 150px
+	background: lighten( $black, 10% )
+

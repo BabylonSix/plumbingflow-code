@@ -10,23 +10,43 @@ html(lang='en')
 
 	body
 		.site-wrapper
-			header
+			header.hrow
+				.hcol.logo-box
+					img.logo(src="img/logo.svg" alt="Plumbing Flow")
 
+				.hcol.menu-box
+					nav.main-nav
+						.button: a(href='./#') Request Services
+						.button: a(href='./#') Reviews
+						.button: a(href='./#') About Us
+
+				.hcol.cta-box
+					img.droplets(src="img/droplets.svg")
+					article
+						h4.call Call for Plumbing Service
+						h4.phone (786) 393 1771
+				
 			section.hero-1st
-				div
+				.col: h1 HERO 1
 
 			section.row
-				div: h1 one
-				div: h1 two
-				div: h1 three
+				.col: h1 one
+				.col: h1 two
+				.col: h1 three
 
 			section.hero-2nd
-				div
+				.col: h1 HERO 2
 
 			section.row
-				div: h1 four
-				div: h1 five
-				div: h1 six
+				.col: h1 four
+				.col: h1 five
+				.col: h1 six
 					
 			footer
+				nav.footer-nav
+					a(href='./#'): .button Site Map
+					a(href='./#'): .button List of Services
+					a(href='./#'): .button Our Vision
+					a(href='./#'): .button Job Opportunities
+					a(href='./#'): .button Contact Us
 
