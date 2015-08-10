@@ -36,7 +36,7 @@ var plumber      = require('gulp-plumber');
 
 // src files
 var src = {
-	jade:   './src/jade/*.jade',
+	jade:   ['./src/jade/*.jade', '!./src/jade/layout/**/j*.jade'],
 	stylus: './src/stylus/*.styl',
 	js: './src/js/*.js'
 };
