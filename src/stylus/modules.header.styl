@@ -1,31 +1,19 @@
 // Header Rows & Columns
-.hcol
+$hcol
 	height: $hcol
-
-+above(1020px)
-	.logo-box
-		lost-column: 6/24 0 0
-	.menu-box
-		// column = 24 - (lost-column + cta-box) / 24
-		lost-column: (24 - ( 6 + 8 ))/24 0 0
-	.cta-box
-		lost-column 8/24 0 0
-
-// iPad sized = two column header
-+between(730px, 1020px)
-	.logo-box,	.cta-box
-		lost-column: 1/2 0 0
 
 
 .logo-box
 	background: linear-gradient(left, $logo-fade-color, $logo-bg-color)
 	lost-align: center
+	@extend $hcol
 	img.logo
 		height: 99px
 		width: 267px
 
 .menu-box
 	background: hsl(196, 79%, 96%)
+	@extend $hcol
 	+below(1020px)
 		display: none
 
@@ -40,6 +28,7 @@ img.droplets
 	background: hsl(206, 86%, 62%)
 	lost-align: middle-center
 	position: relative
+	@extend $hcol
 	article
 		width: 330px
 		text-align: center
@@ -61,3 +50,18 @@ img.droplets
 		a:link
 			text-decoration: none
 			color: hsl(0, 0%, 20%)
+
+
++above(1020px)
+	.logo-box
+		lost-column: 6/24 0 0
+	.menu-box
+		// column = 24 - (lost-column + cta-box) / 24
+		lost-column: (24 - ( 6 + 8 ))/24 0 0
+	.cta-box
+		lost-column 8/24 0 0
+
+// iPad sized = two column header
++between(730px, 1020px)
+	.logo-box,	.cta-box
+		lost-column: 1/2 0 0
