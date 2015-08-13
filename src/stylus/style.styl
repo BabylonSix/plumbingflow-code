@@ -1,183 +1,31 @@
+//- This project follows Inverted Triangle CSS (ITCSS)
+//- Files should be organized by groups which are described below.
+//- As we go down our list of files we should go from:
+//-   Generic to explicit
+//-   Far-reaching to localised
+//-   Low specificity to high specificity
+
+@charset "utf-8"; // Set CSS to utf-8
+
+//- VENDORS
 @import 'typographic'
 
-$dark-grey = hsl(0, 0%, 19%)
-$black = hsl(200, 7%, 9%)
+//- SETTINGS
+@import 'settings.global'
+@import 'settings.colors'
 
-*
-	box-sizing: border-box
-	margin: 0
+//- BASE
+@import 'base.box-sizing'
+@import 'base.foundation'
 
-html
-	font-size: 100%
+//- ELEMENTS
+@import 'elements.typography'
 
-body
-	font-family: "myriad-pro", Myriad Pro, sans-serif
-	font-weight: 400
-
-h1, h2, h3, h4, h5, h6, p
-	color: $dark-grey
-
-// Site Width
-.site-wrapper
-	lost-center: 1280px
-
-// Header Height
-$hcol = 160px
-
-// Navigation
-nav.main-nav, nav.footer-nav
-	height: 100%
-	.button
-		padding-left: 30px
-		line-height: ($hcol / 2)
-		display: inline
-		white-space: nowrap
-		+above(737px)
-			line-height: $hcol
-	a
-		text-decoration: none
-		color: hsl(210, 93%, 62%)
-		font-size: 18px
-		&:hover
-			color: darken(hsl(210, 100%, 44%), 10%)
-
-nav.main-nav
-	font-weight: 800
-	+above(1160px)
-		a
-			font-size: 22px
-			font-weight: 600
-
-nav.footer-nav
-	+above(850px)
-		text-align: right
-		padding-right: 30px
-		a
-			font-weight: 400
-			&:after
-				font-weight: 100
-				content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0|'
-			&:last-of-type:after
-				content: ''
-
-// Header Rows & Columns
-.hcol
-	height: $hcol
-
-+above(1020px)
-	.logo-box
-		lost-column: 6/24 0 0
-	.menu-box
-		// column = 24 - (lost-column + cta-box) / 24
-		lost-column: (24 - ( 6 + 8 ))/24 0 0
-	.cta-box
-		lost-column 8/24 0 0
-
-// iPad sized = two column header
-+between(730px, 1020px)
-	.logo-box,	.cta-box
-		lost-column: 1/2 0 0
-
-
-// Content Rows & Columns
-.row > .col
-	+above(680px)
-		lost-column: 1/3 0 0
-	// temporary column colors
-	&:nth-of-type(1)
-		background: lighten( $black, 20% )
-	&:nth-of-type(2)
-		background: lighten( $black, 25% )
-	&:nth-of-type(3)
-		background: lighten( $black, 30% )
-
-// Default Column Height
-$col-height = 280px
-.col
-	min-height: $col-height
-	// temorary line-height
-	line-height: $col-height
-	text-align: center
-
-.content-wrapper > section
-	lost-utility: clearfix
-	// hero1
-	&:nth-of-type(1)
-		background: $black
-	// hero2
-	&:nth-of-type(3)
-		background: $black
-
-
-
-$logo-bg-color = hsl(196, 79%, 96%)
-$logo-fade-color = hsl(196, 79%, 100%)
-.logo-box
-	background: linear-gradient(left, $logo-fade-color, $logo-bg-color)
-	lost-align: center
-	img.logo
-		height: 99px
-		width: 267px
-
-.menu-box
-	background: hsl(196, 79%, 96%)
-	+below(1020px)
-		display: none
-
-
-img.droplets
-	size: 7px 37px
-	position: absolute
-	left: -9px
-
-// call to action
-.cta-box
-	background: hsl(206, 86%, 62%)
-	lost-align: middle-center
-	position: relative
-	article
-		width: 330px
-		text-align: center
-		+below(410px)
-			width: 290px
-	h4.call
-		font-size: 1.46em
-		color: white
-		margin: 0
-		+above(420px)
-			font-size: 1.6em
-	h4.phone
-		font-size: 2.6em
-		color: white
-		margin: 0
-		color: hsl(0, 0%, 20%)
-		+above(420px)
-			font-size: 3em
-		a:link
-			text-decoration: none
-			color: hsl(0, 0%, 20%)
-
-
-footer
-	min-height: 150px
-	background: lighten( $black, 10% )
-
-
-.content-wrapper
-	width: 100% 
-	height: 100%
-	lost-utility: clearfix
-
-// Content
-.hero-1st
-	height: 100% 
-	width: 100%
-	position: relative
-	position: relative
-	img
-		height: 100%
-		width: 100%
-	span
-		position: absolute
-		bottom: 0
-		left: 0 
+//- MODULES
+@import 'modules.wrapper'
+@import 'modules.page'
+@import 'modules.header'
+@import 'modules.nav'
+@import 'modules.content'
+@import 'modules.hero'
+@import 'modules.footer'

@@ -1,0 +1,8 @@
+//- Set our html to border-box and inherit to everything
+html
+  box-sizing: border-box
+
+//- if we use a plugin or component that uses another behavior
+//- inherit the desired behavir into other parts of the components css
+*, *:before, *:after
+  box-sizing: inherit
