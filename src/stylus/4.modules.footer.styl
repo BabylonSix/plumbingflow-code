@@ -1,3 +1,21 @@
-.footer
+//
+// Global Footer
+//
+
+.gf
 	min-height: 150px
 	background: lighten( $black, 10% )
+
+	&-menu
+		height: 100%
+	
+	&-nav
+		list-style-type: none
+		&__link
+			text-decoration: none
+			color: hsl(210, 93%, 62%)
+			font-size: 18px
+			&:hover
+				color: darken(hsl(210, 100%, 44%), 10%)
+		&__item
+			display: inline

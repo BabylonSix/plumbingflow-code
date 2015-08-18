@@ -1,10 +1,10 @@
-// Header Rows & Columns
-hcol($height = $hcol)
-	height: $height
+//
+// Global header
+//
 
-
-.logo
-	hcol()
+// Logo
+.gh-logo
+	gh-height()
 	background: linear-gradient(left, $logo-fade-color, $logo-bg-color)
 	lost-align: center
 	+above(1020px)
@@ -12,14 +12,41 @@ hcol($height = $hcol)
 	&__logo
 		height: 99px
 		width: 267px
+		
+		
+// Navigation
+.gh-menu
+		gh-height()
+		background: hsl(196, 79%, 96%)
+		+below(1020px)
+			display: none
+		+above(1020px)
+			// column = 24 - (lost-column + cta-box) / 24
+			lost-column: (24 - ( 6 + 8 ))/24 0 0
+
+.gh-nav
+	height: 100%
+	font-weight: 800
+	list-style-type: none
+	&__link
+		text-decoration: none
+		color: hsl(210, 93%, 62%)
+		font-size: 18px
+		&:hover
+			color: darken(hsl(210, 100%, 44%), 10%)
+		+above(1160px)
+				font-size: 22px
+				font-weight: 600
+	&__item
+		display: inline
 
 
-// call to action
-.cta
+// Call to Action
+.gh-cta
+	gh-height()
 	background: hsl(206, 86%, 62%)
 	lost-align: middle-center
 	position: relative
-	hcol()
 	+above(1020px)
 		lost-column 8/24 0 0
 	
@@ -34,25 +61,22 @@ hcol($height = $hcol)
 		+below(410px)
 			width: 290px
 				
-		&__call
-			font-size: 1.46em
-			color: white
-			margin: 0
-			+above(420px)
-				font-size: 1.6em
-		&__phone
-			font-size: 2.6em
-			color: white
-			margin: 0
-			color: hsl(0, 0%, 20%)
-			+above(420px)
-				font-size: 3em
-			a:link
-				text-decoration: none
-				color: hsl(0, 0%, 20%)
-
+	&__call
+		font-size: 1.46em
+		color: white
+		margin: 0
+		+above(420px)
+			font-size: 1.6em
+			
+	&__phone
+		font-size: 2.6em
+		color: white
+		margin: 0
+		color: hsl(0, 0%, 20%)
+		+above(420px)
+			font-size: 3em
 
 // iPad sized = two column header
 +between(730px, 1020px)
-	.logo,	.cta
+	.gh-logo,	.gh-cta
 		lost-column: 1/2 0 0
