@@ -1,4 +1,14 @@
 // Navigation
+.menu-box
+	hcol()
+	background: hsl(196, 79%, 96%)
+	+below(1020px)
+		display: none
+	+above(1020px)
+		// column = 24 - (lost-column + cta-box) / 24
+		lost-column: (24 - ( 6 + 8 ))/24 0 0
+
+
 .main-nav, .footer-nav
 	height: 100%
 	.button

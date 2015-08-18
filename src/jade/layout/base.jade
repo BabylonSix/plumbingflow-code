@@ -17,20 +17,20 @@ html(lang='en')
 	body
 		.site-wrapper
 			header.hrow
-				.logo-box
-					a(href='./index.html'): img.logo(src='img/logo.svg' alt='Plumbing Flow')
+				.logo
+					a(href='./index.html'): img.logo__image(src='img/logo.svg' alt='Plumbing Flow')
 
-				.menu-box
+				.menu
 					nav.main-nav
 						.button: a(href='./request-services.html') Request Services
 						.button: a(href='./reviews.html') Reviews
 						.button: a(href='./about-us.html') About Us
 
-				.cta-box
-					img.droplets(src='img/droplets.svg')
-					article.cta-box__cta
-						h4.call Call for Plumbing Service
-						h4.phone (786) 393 1771
+				.cta
+					img.cta__droplets(src='img/droplets.svg')
+					article.cta__message
+						h4.cta__message__call Call for Plumbing Service
+						h4.cta__message__phone (786) 393 1771
 			.content-wrapper
 				block content
 
