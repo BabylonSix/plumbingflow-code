@@ -23,6 +23,7 @@ var lost         = require('lost');        // grids
 var autoprefixer = require('gulp-autoprefixer');
 var postcss      = require('gulp-postcss');
 var sourcemaps   = require('gulp-sourcemaps');
+var combineMQ    = require('gulp-combine-mq');
 
 // Catch Errors
 var plumber      = require('gulp-plumber');
@@ -80,6 +81,9 @@ gulp.task('stylus', function() {
 		.pipe(postcss([
       lost()
     ]))
+    .pipe(combineMQ({
+        beautify: true
+    }))
     .pipe(autoprefixer())
     .pipe(sourcemaps.write('./sourcemaps/'))
 		.pipe(gulp.dest(build.css))
