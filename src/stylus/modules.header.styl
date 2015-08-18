@@ -1,19 +1,19 @@
 // Header Rows & Columns
-$hcol
+hcol()
 	height: $hcol
 
 
 .logo-box
 	background: linear-gradient(left, $logo-fade-color, $logo-bg-color)
 	lost-align: center
-	@extend $hcol
-	img.logo
+	hcol()
+	.logo
 		height: 99px
 		width: 267px
 
 .menu-box
 	background: hsl(196, 79%, 96%)
-	@extend $hcol
+	hcol()
 	+below(1020px)
 		display: none
 
@@ -28,19 +28,19 @@ img.droplets
 	background: hsl(206, 86%, 62%)
 	lost-align: middle-center
 	position: relative
-	@extend $hcol
-	article
+	hcol()
+	.cta-box__cta
 		width: 330px
 		text-align: center
 		+below(410px)
 			width: 290px
-	h4.call
+	.call
 		font-size: 1.46em
 		color: white
 		margin: 0
 		+above(420px)
 			font-size: 1.6em
-	h4.phone
+	.phone
 		font-size: 2.6em
 		color: white
 		margin: 0
