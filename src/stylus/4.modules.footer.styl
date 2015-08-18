@@ -6,16 +6,18 @@
 	&-menu
 		background: lighten( $black, 10% )
 		height: 150px
-		// height: 100%
 	
 	&-nav
+		margin-left: 10px
+		margin-right: 10px
+		float: right
+		  
 		v-align()
+		
 		list-style-type: none
 		&__link
-			text-decoration: none
-			color: hsl(210, 93%, 62%)
+			button()
 			font-size: 18px
-			&:hover
-				color: darken(hsl(210, 100%, 44%), 10%)
+			line-height: 58px 
 		&__item
 			display: inline

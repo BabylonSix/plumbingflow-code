@@ -23,18 +23,14 @@
 	+above(1020px)
 		// column = 24 - (lost-column + cta-box) / 24
 		lost-column: (24 - ( 6 + 8 ))/24 0 0
-
+	
 .gh-nav
 	v-align()
-	margin: auto
 	list-style-type: none
 	&__link
-		text-decoration: none
-		color: hsl(210, 93%, 62%)
+		button()
 		font-weight: 800
 		font-size: 18px
-		&:hover
-			color: darken(hsl(210, 100%, 44%), 10%)
 		+above(1160px)
 				font-size: 22px
 				font-weight: 600
