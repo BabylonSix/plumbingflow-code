@@ -16,21 +16,22 @@
 		
 // Navigation
 .gh-menu
-		gh-height()
-		background: hsl(196, 79%, 96%)
-		+below(1020px)
-			display: none
-		+above(1020px)
-			// column = 24 - (lost-column + cta-box) / 24
-			lost-column: (24 - ( 6 + 8 ))/24 0 0
+	gh-height()
+	background: hsl(196, 79%, 96%)
+	+below(1019px)
+		display: none
+	+above(1020px)
+		// column = 24 - (lost-column + cta-box) / 24
+		lost-column: (24 - ( 6 + 8 ))/24 0 0
 
 .gh-nav
-	height: 100%
-	font-weight: 800
+	v-align()
+	margin: auto
 	list-style-type: none
 	&__link
 		text-decoration: none
 		color: hsl(210, 93%, 62%)
+		font-weight: 800
 		font-size: 18px
 		&:hover
 			color: darken(hsl(210, 100%, 44%), 10%)
