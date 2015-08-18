@@ -1,0 +1,67 @@
+// Header Rows & Columns
+hcol($height = $hcol)
+	height: $height
+
+
+.logo-box
+	background: linear-gradient(left, $logo-fade-color, $logo-bg-color)
+	lost-align: center
+	hcol()
+	.logo
+		height: 99px
+		width: 267px
+
+.menu-box
+	background: hsl(196, 79%, 96%)
+	hcol()
+	+below(1020px)
+		display: none
+
+
+img.droplets
+	size: 7px 37px
+	position: absolute
+	left: -9px
+
+// call to action
+.cta-box
+	background: hsl(206, 86%, 62%)
+	lost-align: middle-center
+	position: relative
+	hcol()
+	.cta-box__cta
+		width: 330px
+		text-align: center
+		+below(410px)
+			width: 290px
+	.call
+		font-size: 1.46em
+		color: white
+		margin: 0
+		+above(420px)
+			font-size: 1.6em
+	.phone
+		font-size: 2.6em
+		color: white
+		margin: 0
+		color: hsl(0, 0%, 20%)
+		+above(420px)
+			font-size: 3em
+		a:link
+			text-decoration: none
+			color: hsl(0, 0%, 20%)
+
+
++above(1020px)
+	.logo-box
+		lost-column: 6/24 0 0
+	.menu-box
+		// column = 24 - (lost-column + cta-box) / 24
+		lost-column: (24 - ( 6 + 8 ))/24 0 0
+	.cta-box
+		lost-column 8/24 0 0
+
+// iPad sized = two column header
++between(730px, 1020px)
+	.logo-box,	.cta-box
+		lost-column: 1/2 0 0
