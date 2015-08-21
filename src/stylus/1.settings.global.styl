@@ -1,8 +1,20 @@
+$base_font_size = 16
+// standard default browser size is 16px,
+// so this brings base font size to 18px
+// while keeping things flexible for the user
+$base_font_size_ems = unit($base_font_size / 16, em)
+
+$px = unit(1 / $base_font_size, rem)
+$px_em = unit(1/ base_font_size, em)
+
+// The Golden Ration
+$phi = 1.618
+
 // max site-width
 $max-site-width = 1280px
 
 // Header Height
 $gh-height = 160px
 
-// Default Column Height
+// Column Height
 $col-height = 280px
