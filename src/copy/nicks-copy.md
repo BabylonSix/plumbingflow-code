@@ -63,9 +63,10 @@ Our commercial drain cleaning services are designed to offer companies in Greate
 
 PlumbingFlow plumbers are experienced at drain cleaning for offices, restaurants, warehouses and every type of business! If it is a clogged drain, we can clear it.
 
-#Faucets & Sinks
+
+## USP 3
+Faucets & Sinks
 #Kitchen, #bar, #bath, #lavatory or #laundry room…we have the sink and faucet solution that will meet your plumbing needs. We can #repair and service all brands of faucets in your home and business.
 
 Faucet & Sink Repair
-
 #Leaking kitchen faucet, #bathroom faucet, laundry faucet or tired, worn out sink? No problem is too great for our highly trained plumbers. From a sink replacement, to a faucet repair or upgrade, our experienced plumbing team gets the job done quickly and affordably.
