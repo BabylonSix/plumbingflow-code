@@ -4,7 +4,7 @@
 
 .gf
 	&-menu
-		background: lighten( $black, 10% )
+		background: $logo-bg-color
 		height: 150px
 		+below(369px)
 			height: 200px
@@ -22,6 +22,6 @@
 		&__item
 			display: inline-block
 		&__link
-			button(magenta)
+			button(lighten(magenta, 50%))
 			font-size: 18px
 			line-height: 58px 
