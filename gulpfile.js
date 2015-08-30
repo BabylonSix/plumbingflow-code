@@ -11,6 +11,7 @@ var reload       = browserSync.reload;
 
 // Jade
 var jade         = require('gulp-jade');
+var findAffected = require('gulp-jade-find-affected');
 var minifyHTML   = require('gulp-minify-html');
 
 // Stylus
@@ -42,10 +43,11 @@ var sitemap      = require('gulp-sitemap');
 
 // src files
 var src = {
-	jade:   ['./src/jade/*.jade', '!./src/jade/layout/**/*.jade'],
-	stylus: './src/stylus/style.styl',
-	stylusAll: './src/stylus/**/*.styl',
-	js: './src/js/*.js'
+	jade:      ['./src/jade/*.jade', '!./src/jade/layout/**/*.jade'],
+	jadeAll:    './src/jade/**/*.jade',
+	stylus:     './src/stylus/style.styl',
+	stylusAll:  './src/stylus/**/*.styl',
+	js:         './src/js/*.js'
 };
 
 
@@ -72,6 +74,7 @@ var siteURL = {
 gulp.task('jade', function() {
 	stream = gulp.src(src.jade)
 		.pipe(plumber())
+		.pipe(findAffected())
 		.pipe(jade({pretty: true}))
 		.pipe(gulp.dest(build.html))
 		.pipe(reload({stream: true}));
@@ -122,9 +125,9 @@ gulp.task( 'default', ['jade', 'stylus', 'js'], function() {
 		server: 'build/'
 	});
 
-	gulp.watch( src.jade,   ['jade'] );
-	gulp.watch( src.stylusAll, ['stylus'] );
-	gulp.watch( src.js,     ['js'] );
+	gulp.watch( src.jadeAll,   [ 'jade'   ]);
+	gulp.watch( src.stylusAll, [ 'stylus' ]);
+	gulp.watch( src.js,        [ 'js'     ]);
 
 });
 
