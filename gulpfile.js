@@ -44,6 +44,7 @@ var sitemap      = require('gulp-sitemap');
 var src = {
 	jade:   ['./src/jade/*.jade', '!./src/jade/layout/**/*.jade'],
 	stylus: './src/stylus/style.styl',
+	stylusAll: './src/stylus/**/*.styl',
 	js: './src/js/*.js'
 };
 
@@ -122,7 +123,7 @@ gulp.task( 'default', ['jade', 'stylus', 'js'], function() {
 	});
 
 	gulp.watch( src.jade,   ['jade'] );
-	gulp.watch( src.stylus, ['stylus'] );
+	gulp.watch( src.stylusAll, ['stylus'] );
 	gulp.watch( src.js,     ['js'] );
 
 });
