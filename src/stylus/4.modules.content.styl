@@ -1,0 +1,30 @@
+$vertical-space = 80*$px
+
+.copy
+	lost-center: 800*$px
+	margin-bottom: $vertical-space
+	&:first-of-type
+		margin-top: $vertical-space
+
+	&__logo
+		lost-column: 1/3
+		
+		img
+			float: right
+			padding-bottom: 30px
+			padding-left: 20*$px
+
+	&__text
+		lost-column: 2/3
+
+.schedule-service
+	display: inline-block
+	padding: 22*$px
+	border-radius: 4*$px
+	background: red
+	color: white
+	float: right
+	margin-top: 40*$px
+	margin-right: 40*$px
+	&:hover
+		background: darken(red, 10%)
