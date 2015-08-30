@@ -42,7 +42,7 @@ var sitemap      = require('gulp-sitemap');
 
 // src files
 var src = {
-	jade:   ['./src/jade/*.jade', '!./src/jade/layout/**/j*.jade'],
+	jade:   ['./src/jade/*.jade', '!./src/jade/layout/**/*.jade'],
 	stylus: './src/stylus/style.styl',
 	js: './src/js/*.js'
 };
@@ -50,9 +50,9 @@ var src = {
 
 // build directories
 var build = {
-	html: 'build/',
-	css:  'build/css/',
-	js:   'build/js/'
+	html: './build/',
+	css:  './build/css/',
+	js:   './build/js/'
 };
 
 // sitemap site url
@@ -129,12 +129,13 @@ gulp.task( 'default', ['jade', 'stylus', 'js'], function() {
 
 
 
+
 //
 // Production Gulp Tasks
 //
 
 // production directories
-var build = {
+var pro = {
 	html: 'production/',
 	css:  'production/css/',
 	js:   'production/js/'
@@ -149,7 +150,7 @@ gulp.task('pro_jade', function() {
 		.pipe(minifyHTML({
 			conditionals: true
 		}))
-		.pipe(gulp.dest(build.html))
+		.pipe(gulp.dest(pro.html))
 		.pipe(reload({stream: true}));
 
 	return stream;
@@ -173,7 +174,7 @@ gulp.task('pro_stylus', function() {
     .pipe(minifyCSS({
     	structureMinimization: true
   	}))
-		.pipe(gulp.dest(build.css))
+		.pipe(gulp.dest(pro.css))
 		.pipe(reload({stream: true}));
 
 	return stream;
@@ -184,7 +185,7 @@ gulp.task('pro_stylus', function() {
 gulp.task('pro_js', function() {
 	stream = gulp.src(src.js)
 		.pipe(plumber())
-		.pipe(gulp.dest(build.js))
+		.pipe(gulp.dest(pro.js))
 		.pipe(reload({stream: true}));
 
 	return stream;
