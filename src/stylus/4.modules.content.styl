@@ -1,5 +1,63 @@
+$vertical-space = 130*$px
+$paragraph-space = 34*$px
 .copy
+	&__head
+		display: flex
+		align-items: center
+		margin-bottom: $paragraph-space
+		+above(980px)
+			width: 1070px 
+			margin: auto
+
+
+	&__logo
+		width: 130*$px
+		margin-right: 20*$px
+		// background: green
+		+above(980px)
+			margin-right: 60*$px
+
+	&__header
+		font-size: 9vw
+		+above(700px)
+			font-size: 44*$px
+
+	&__content
+		max-width: 680px
+		margin: auto
+		display: block
+
 	&__paragraph
 		font-size: 22*$px
 		line-height: 34*$px
-		margin-bottom: 22*$px 
+		margin-bottom: $paragraph-space
+	&__cta
+		margin: auto
+
+	// margins
+	margin-bottom: $vertical-space
+	&:first-of-type // top margine
+		margin-top: ($vertical-space - 30%)
+
+.social
+	display: flex
+	flex-direction: row
+	align-items: center
+	justify-content: space-around
+	width: 250px
+	display: none
+
+
+.schedule-service
+	display: block
+	width: 250px
+	font-size: 16*$px
+	font-weight: 600
+	padding: 22*$px
+	border-radius: 4*$px
+	background: red
+	color: white
+	margin: 40*$px auto
+	text-align: center
+	&:hover
+		background: darken(red, 10%)

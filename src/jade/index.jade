@@ -6,63 +6,64 @@ append config
 
 block content
 	section.copy
-		//- .copy__logo
-		img.copy__image(src='./img/wrench.svg')
-		img.self-promotion(src='./img/bbb-logo.svg')
-		img.self-promotion(src='./img/yelp-logo.svg')
-
-		//- .copy__content
-		h1.copy__header We Know Plumbing
-		p.copy__paragraph When you are met with a reality YOU don’t want to deal with,
-			| Call someone who is prepared to fix it.
-		p.copy__paragraph We are professional plumbers, respectful people, and on time.
-		p.copy__paragraph There is a reason your pipes are clogged, your drain is leaking,
-			| and for some reason, a funny smell is emanating throughout your families living area.
-		p.copy__paragraph No, it’s not just you, this happens to everyone. <br />
-			| metal rusts, plastic crumbles, and so pipes break and burst.
-		p.copy__paragraph Life happens to everyone and everything.
-		p.copy__paragraph Allow us to fix your plumbing problems quickly, <br />
-			| so you could move on with the more pleasant things in life.
+		.copy__head
+			img.copy__logo(src='./img/wrench.svg')
+			.social
+				p.social__cta find us on:
+				a(href='https://www.bbb.org/'): img.social__image(src='./img/bbb-logo.svg')
+				a(href='http://www.yelp.com/'): img.social__image(src='./img/yelp-logo.svg')
+			h2.copy__header We Know Plumbing
+		.copy__content
+			p.copy__paragraph When you are met with a reality YOU don’t want to deal with,
+				| Call someone who is prepared to fix it.
+			p.copy__paragraph We are professional plumbers, respectful people, and on time.
+			p.copy__paragraph There is a reason your pipes are clogged, your drain is leaking,
+				| and for some reason, a funny smell is emanating throughout your families living area.
+			p.copy__paragraph No, it’s not just you, this happens to everyone.
+				| metal rusts, plastic crumbles, and so pipes break and burst.
+			p.copy__paragraph Life happens to everyone and everything.
+			p.copy__paragraph Allow us to fix your plumbing problems quickly,
+				| so you could move on with the more pleasant things in life.
 		a.schedule-service(href='./request-services.html') Schedule Service Online
 
 	section.copy
-		//- .copy__logo
-		img.copy__image(src='./img/workmanship.svg')
-		//- .copy__content
-		h2.copy__header Excellent Workmanship
-		p.copy__paragraph We like to make our money the old fasioned way, <br />
-			| By delivering high quality, uncompromised <br />
-			| service and workmanship, with no shortcuts.
-		p.copy__paragraph We find solutions for your problems.
+		.copy__head
+			img.copy__logo(src='./img/five-stars.svg')
+			h2.copy__header Excellent Workmanship
+		.copy__content
+			p.copy__paragraph We like to make our money the old fasioned way,
+				| By delivering high quality, uncompromised
+				| service and workmanship, with no shortcuts.
+			p.copy__paragraph We find solutions for your problems.
 
 	section.copy
-		//- .copy__logo
-		img.copy__image(src='./img/games.svg')
-		//- .copy__content
-		h2.copy__header We don’t play games
-		p.copy__paragraph If a service costs X amount, we charge you X amount, <br />
-			| we don’t pretend to charge you less by giving you a <br />
-			| coupon, and then charging you more to make that <br />
-			| coupon discount money back.
-		p.copy__paragraph Yes, companies really do that, we don’t.
+		.copy__head
+			img.copy__logo(src='./img/games.svg')
+			h2.copy__header We don’t play games
+		.copy__content
+			p.copy__paragraph If a service costs X amount, we charge you X amount,
+				| we don’t pretend to charge you less by giving you a
+				| coupon, and then charging you more to make that
+				| coupon discount money back.
+			p.copy__paragraph Yes, companies really do that, we don’t.
 
 	section.copy
-		//- .copy__logo
-		img.copy__image(src='./img/time.svg')
-		//- .copy__content
-		h2.copy__header Your time is valuable
-		p.copy__paragraph We value your time, so we do everything <br />
-			| we can in a speedy and professional manner, <br />
-			| We don’t want to waste anyones time.
+		.copy__head
+			img.copy__logo(src='./img/time.svg')
+			h2.copy__header Your time is valuable
+		.copy__content
+			p.copy__paragraph We value your time, so we do everything
+				| we can in a speedy and professional manner,
+				| We don’t want to waste anyones time.
 
 	section.copy
-		//- .copy__logo
-		img.copy__image(src='./img/credit-card.svg')
-		//- .copy__content
-		h2.copy__header We’ve got you covered
-		p.copy__paragraph When emergencies happen, <br />
-			| You can rely on us. <br />
-			| We accept multiple forms of <br />
-			| payment options, so you wont <br />
-			| be left in the cold.
-		p.copy__paragraph We’ll help you on the spot.
+		.copy__head
+			img.copy__logo(src='./img/payment.svg')
+			h2.copy__header We’ve got you covered
+		.copy__content
+			p.copy__paragraph When emergencies happen,
+				| You can rely on us.
+				| We accept multiple forms of
+				| payment options, so you wont
+				| be left in the cold.
+			p.copy__paragraph We’ll help you on the spot.

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="124px" height="124px" viewBox="0 0 124 124" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch Beta 3.4 (15009) - http://www.bohemiancoding.com/sketch -->
+    <title>time</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#E4F3FC" offset="0%"></stop>
+            <stop stop-color="#C4E1F7" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="124" height="124" rx="100"></rect>
+    </defs>
+    <g id="WireFrame-Storyboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-Landing" sketch:type="MSArtboardGroup" transform="translate(-304.000000, -1911.000000)">
+            <g id="time" sketch:type="MSLayerGroup" transform="translate(304.000000, 1911.000000)">
+                <g id="time-face-+-second-hand-+-minute-hand-+-hour-hand-+-inner-circle-Mask">
+                    <mask id="mask-3" sketch:name="Mask" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <use id="Mask" fill="url(#linearGradient-1)" sketch:type="MSShapeGroup" xlink:href="#path-2"></use>
+                    <ellipse id="time-face" stroke="#1485E0" stroke-width="2" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-3)" cx="61.96" cy="62.5" rx="55.2" ry="55.2"></ellipse>
+                    <path d="M61.96,62.5 L37.4266667,37.9666667" id="second-hand" stroke="#1485E0" stroke-width="2" sketch:type="MSShapeGroup" mask="url(#mask-3)"></path>
+                    <path d="M62.2666667,63.2666667 L97.5333333,63.2666667" id="minute-hand" stroke="#1485E0" stroke-width="2" sketch:type="MSShapeGroup" mask="url(#mask-3)"></path>
+                    <path d="M80.36,45.6333333 L61.96,62.5" id="hour-hand" stroke="#1485E0" stroke-width="2" sketch:type="MSShapeGroup" mask="url(#mask-3)"></path>
+                    <ellipse id="inner-circle" stroke="#1485E0" stroke-width="2" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-3)" cx="61.96" cy="62.5" rx="4.6" ry="4.6"></ellipse>
+                </g>
+                <g id="seconds" transform="translate(11.000000, 11.000000)" stroke="#1485E0" sketch:type="MSShapeGroup">
+                    <path d="M50.96,14.7 L50.96,0.9" id="second-tick"></path>
+                    <path d="M46.36,7.34 L45.7466667,1.20666667" id="second-tick"></path>
+                    <path d="M41.76,7.95333333 L40.5333333,1.97333333" id="second-tick"></path>
+                    <path d="M37.3133333,9.18 L35.32,3.35333333" id="second-tick"></path>
+                    <path d="M32.8666667,10.8666667 L30.4133333,5.34666667" id="second-tick"></path>
+                    <path d="M28.7266667,13.0133333 L25.66,7.64666667" id="second-tick"></path>
+                    <path d="M24.8933333,15.4666667 L21.2133333,10.56" id="second-tick"></path>
+                    <path d="M21.2133333,18.38 L17.2266667,13.9333333" id="second-tick"></path>
+                    <path d="M17.9933333,21.7533333 L13.3933333,17.6133333" id="second-tick"></path>
+                    <path d="M15.08,25.4333333 L10.02,21.7533333" id="second-tick"></path>
+                    <path d="M12.4733333,29.2666667 L7.26,26.2" id="second-tick"></path>
+                    <path d="M10.48,33.4066667 L4.80666667,30.9533333" id="second-tick"></path>
+                    <path d="M8.79333333,37.7 L2.96666667,35.86" id="second-tick"></path>
+                    <path d="M7.56666667,42.3 L1.58666667,40.92" id="second-tick"></path>
+                    <path d="M6.8,46.9 L0.666666667,46.2866667" id="second-tick"></path>
+                    <path d="M14.16,51.5 L0.36,51.5" id="second-tick"></path>
+                    <path d="M6.8,56.1 L0.666666667,56.7133333" id="second-tick"></path>
+                    <path d="M7.56666667,60.7 L1.58666667,62.08" id="second-tick"></path>
+                    <path d="M8.79333333,65.3 L2.96666667,67.14" id="second-tick"></path>
+                    <path d="M10.48,69.5933333 L4.80666667,72.0466667" id="second-tick"></path>
+                    <path d="M12.4733333,73.7333333 L7.26,76.8" id="second-tick"></path>
+                    <path d="M15.08,77.5666667 L10.02,81.2466667" id="second-tick"></path>
+                    <path d="M17.9933333,81.2466667 L13.3933333,85.3866667" id="second-tick"></path>
+                    <path d="M21.2133333,84.62 L17.2266667,89.0666667" id="second-tick"></path>
+                    <path d="M24.8933333,87.5333333 L21.2133333,92.44" id="second-tick"></path>
+                    <path d="M28.7266667,89.9866667 L25.66,95.3533333" id="second-tick"></path>
+                    <path d="M32.8666667,92.1333333 L30.4133333,97.6533333" id="second-tick"></path>
+                    <path d="M37.3133333,93.82 L35.32,99.6466667" id="second-tick"></path>
+                    <path d="M41.76,95.0466667 L40.5333333,101.026667" id="second-tick"></path>
+                    <path d="M46.36,95.66 L45.7466667,101.793333" id="second-tick"></path>
+                    <path d="M50.96,88.3 L50.96,102.1" id="second-tick"></path>
+                    <path d="M55.7133333,95.66 L56.3266667,101.793333" id="second-tick"></path>
+                    <path d="M60.3133333,95.0466667 L61.54,101.026667" id="second-tick"></path>
+                    <path d="M64.76,93.82 L66.6,99.6466667" id="second-tick"></path>
+                    <path d="M69.0533333,92.1333333 L71.66,97.6533333" id="second-tick"></path>
+                    <path d="M73.1933333,89.9866667 L76.26,95.3533333" id="second-tick"></path>
+                    <path d="M77.18,87.5333333 L80.7066667,92.44" id="second-tick"></path>
+                    <path d="M80.7066667,84.62 L84.8466667,89.0666667" id="second-tick"></path>
+                    <path d="M84.08,81.2466667 L88.68,85.3866667" id="second-tick"></path>
+                    <path d="M86.9933333,77.5666667 L91.9,81.2466667" id="second-tick"></path>
+                    <path d="M89.6,73.7333333 L94.8133333,76.8" id="second-tick"></path>
+                    <path d="M91.5933333,69.5933333 L97.2666667,72.0466667" id="second-tick"></path>
+                    <path d="M93.28,65.3 L99.1066667,67.14" id="second-tick"></path>
+                    <path d="M94.5066667,60.7 L100.486667,62.08" id="second-tick"></path>
+                    <path d="M95.2733333,56.1 L101.406667,56.7133333" id="second-tick"></path>
+                    <path d="M87.76,51.5 L101.56,51.5" id="second-tick"></path>
+                    <path d="M95.2733333,46.9 L101.406667,46.2866667" id="second-tick"></path>
+                    <path d="M94.5066667,42.3 L100.486667,40.92" id="second-tick"></path>
+                    <path d="M93.28,37.7 L99.1066667,35.86" id="second-tick"></path>
+                    <path d="M91.5933333,33.4066667 L97.2666667,30.9533333" id="second-tick"></path>
+                    <path d="M89.6,29.2666667 L94.8133333,26.2" id="second-tick"></path>
+                    <path d="M86.9933333,25.4333333 L91.9,21.7533333" id="second-tick"></path>
+                    <path d="M84.08,21.7533333 L88.68,17.6133333" id="second-tick"></path>
+                    <path d="M80.7066667,18.38 L84.8466667,13.9333333" id="second-tick"></path>
+                    <path d="M77.18,15.4666667 L80.7066667,10.56" id="second-tick"></path>
+                    <path d="M73.1933333,13.0133333 L76.26,7.64666667" id="second-tick"></path>
+                    <path d="M69.0533333,10.8666667 L71.66,5.34666667" id="second-tick"></path>
+                    <path d="M64.76,9.18 L66.6,3.35333333" id="second-tick"></path>
+                    <path d="M60.3133333,7.95333333 L61.54,1.97333333" id="second-tick"></path>
+                    <path d="M55.7133333,7.34 L56.3266667,1.20666667" id="second-tick"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

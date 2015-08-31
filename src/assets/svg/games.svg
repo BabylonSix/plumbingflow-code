@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="126px" height="126px" viewBox="0 0 126 126" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch Beta 3.4 (15009) - http://www.bohemiancoding.com/sketch -->
+    <title>games</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs></defs>
+    <g id="WireFrame-Storyboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-Landing" sketch:type="MSArtboardGroup" transform="translate(-302.000000, -1498.000000)">
+            <g id="games" sketch:type="MSLayerGroup" transform="translate(303.000000, 1499.000000)">
+                <path d="M0,62 C0,27.7583455 27.7508167,0 62,0 C96.2416545,0 124,27.7508167 124,62 C124,96.2416545 96.2491833,124 62,124 C27.7583455,124 0,96.2491833 0,62 L0,62 Z" id="Shape" stroke="#1485E0" stroke-width="2" sketch:type="MSShapeGroup"></path>
+                <path d="M63.1422925,31 C76.8379447,43.9486166 90.5335968,56.8972332 90.5335968,70.0948617 C90.5335968,77.3162055 84.3083004,83.0434783 76.8379447,83.0434783 C70.6126482,83.0434783 67.1264822,81.5494071 64.1383399,76.0711462 C67.3754941,87.2766798 70.6126482,94 76.8379447,94 L49.6956522,94 C55.9209486,94 59.4071146,87.2766798 62.3952569,76.0711462 C59.1581028,81.5494071 55.9209486,83.541502 49.6956522,83.541502 C42.2252964,83.541502 36,77.5652174 36,70.3438735 C36,57.3952569 49.6956522,43.9486166 63.1422925,31 L63.1422925,31 Z" id="club" fill="#1485E0" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
