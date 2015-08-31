@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="98px" height="62px" viewBox="0 0 98 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch Beta 3.4 (15009) - http://www.bohemiancoding.com/sketch -->
+    <title>letter</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="60"></rect>
+        <rect id="path-3" x="0" y="0" width="96" height="60"></rect>
+    </defs>
+    <g id="WireFrame-Storyboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-Schedule-Form" sketch:type="MSArtboardGroup" transform="translate(-732.000000, -920.000000)">
+            <g id="letter" sketch:type="MSLayerGroup" transform="translate(733.000000, 921.000000)">
+                <g id="XMLID_281_-link" fill="#C4E1F7" sketch:type="MSShapeGroup">
+                    <rect id="XMLID_281_" x="0" y="0" width="96" height="60"></rect>
+                </g>
+                <g id="XMLID_283_-Clipped">
+                    <mask id="mask-2" sketch:name="XMLID_281_" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="XMLID_281_"></g>
+                    <path d="M0.402094241,59.25 L47.6481675,25.25 L95.8994764,59.75" id="XMLID_283_" stroke="#1485E0" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                </g>
+                <g id="XMLID_282_-Clipped">
+                    <mask id="mask-4" sketch:name="XMLID_281_" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <g id="XMLID_281_"></g>
+                    <path d="M0.402094241,0.25 L43.5267016,31.3 C45.9895288,33.05 49.3068063,33.05 51.7696335,31.3 L95.8994764,-0.25" id="XMLID_282_" stroke="#1485E0" stroke-width="2" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-4)"></path>
+                </g>
+                <g id="XMLID_281_-link" stroke="#1485E0" stroke-width="2" sketch:type="MSShapeGroup">
+                    <rect id="XMLID_281_" x="0" y="0" width="96" height="60"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

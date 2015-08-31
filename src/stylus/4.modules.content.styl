@@ -1,12 +1,14 @@
 $vertical-space = 130*$px
 $paragraph-space = 34*$px
+$paragraph-size = 22*$px
+$paragraph-lineheight = 34*$px
 .copy
 	&__head
 		display: flex
 		align-items: center
 		margin-bottom: $paragraph-space
 		+above(960px)
-			width: 990px 
+			width: 990px
 			margin: 0px auto $paragraph-space auto
 
 
@@ -29,11 +31,9 @@ $paragraph-space = 34*$px
 			margin-left: 155px
 
 	&__paragraph
-		font-size: 22*$px
-		line-height: 34*$px
+		font-size: $paragraph-size
+		line-height: $paragraph-lineheight
 		margin-bottom: $paragraph-space
-	&__cta
-		margin: auto
 
 	// margins
 	margin-bottom: $vertical-space
@@ -61,3 +61,14 @@ $paragraph-space = 34*$px
 	text-align: center
 	&:hover
 		background: darken(red, 10%)
+
+.schedule-info
+	background: hsl(0, 0%, 96%)
+	margin: $vertical-space auto
+	padding: 30px
+	max-width: 750px
+	
+	&__paragraph
+		font-size: $paragraph-size
+		line-height: $paragraph-lineheight 
+		margin-bottom: $paragraph-space
