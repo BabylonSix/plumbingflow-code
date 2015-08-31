@@ -115,7 +115,7 @@ gulp.task('js', function() {
 		.pipe(reload({stream: true}));
 
 	return stream;
-})
+});
 
 
 // Browser Sync
