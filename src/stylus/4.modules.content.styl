@@ -62,13 +62,37 @@ $paragraph-lineheight = 34*$px
 	&:hover
 		background: darken(red, 10%)
 
+
+//
+// Schedule Service Page
+//
+
 .schedule-info
 	background: hsl(0, 0%, 96%)
-	margin: $vertical-space auto
+	margin: ($vertical-space - 60%) auto ($vertical-space - 60%) auto
+	border-radius: 4px
 	padding: 30px
 	max-width: 750px
-	
+
 	&__paragraph
 		font-size: $paragraph-size
-		line-height: $paragraph-lineheight 
-		margin-bottom: $paragraph-space
+		line-height: $paragraph-lineheight
+		margin-bottom: ($paragraph-space - 30%)
+
+.schedule-form
+	max-width: 600px
+	width: 100%
+	margin: 0 auto
+
+.contact, .location, .problem
+	border: 1px solid #bbb
+	background-color: hsl(0, 0%, 96%)
+	border-radius: 8px
+	padding: 20px
+	margin-bottom: 20px
+
+.form
+	&__fieldset
+	&__label
+	&__legend
+	&__input
