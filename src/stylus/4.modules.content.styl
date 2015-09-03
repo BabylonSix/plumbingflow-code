@@ -79,20 +79,39 @@ $paragraph-lineheight = 34*$px
 		line-height: $paragraph-lineheight
 		margin-bottom: ($paragraph-space - 30%)
 
-.schedule-form
-	max-width: 600px
-	width: 100%
-	margin: 0 auto
 
-.contact, .location, .problem
-	border: 1px solid #bbb
-	background-color: hsl(0, 0%, 96%)
-	border-radius: 8px
-	padding: 20px
-	margin-bottom: 20px
 
 .form
-	&__fieldset
-	&__label
-	&__legend
+	max-width: 600*$px
+	width: 100%
+	margin: 0 auto
+	&__group
+		border: 1*$px solid #bbb
+		background-color: hsl(0, 0%, 96%)
+		border-radius: 4*$px
+		padding: 20*$px
+		margin-bottom: 20*$px
+
+	&__group-name
+		font-style: bold
+		font-size: ($paragraph-size + 6*$px)
+		line-height: $paragraph-lineheight
+	// &__label
 	&__input
+		display: block
+		border: 1*$px solid #bbb
+		border-radius: 4*$px
+		max-width: 400*$px
+		width: 100% 
+		margin-bottom: 12*$px
+		font-size: $paragraph-size
+		line-height: $paragraph-lineheight
+	&__text-area
+		border: 1*$px solid #bbb
+		font-size: $paragraph-size
+		line-height: $paragraph-lineheight
+		display: block
+		max-width: 600*$px
+		border-radius: 4*$px
+		width: 100% 
+		height: 300*$px

@@ -10,24 +10,24 @@ block content
 		p.schedule-info__paragraph Within 2 business hours, you’ll recieve a phonecall or text from one of our representatives to discuss your plumbing problem, and put you into a schedule timeframe that works for you.
 
 	section
-		form(name='contact' action='//formspree.io/formspree@plumbingflow.com' method='POST').schedule-form
+		form(name='contact' action='//formspree.io/formspree@plumbingflow.com' method='POST').form
 			//- Contact
-			fieldset.contact
-				legend Contact
-				input.contact__name(name='full-name' placeholder='full name' type='text' tabindex='1' autofocus required)
-				input.contact__phone(name='phone-number' placeholder='phone number' type='tel' tabindex='2' required)
-				input.contact__email(name='email' placeholder='email' type='email' autocomplete='email' tabindex='3' required)
+			fieldset.form__group
+				legend.form__group-name Contact
+				input.form__input(name='full-name' placeholder='full name' type='text' tabindex='1' autofocus required)
+				input.form__input(name='phone-number' placeholder='phone number' type='tel' tabindex='2' required)
+				input.form__input(name='email' placeholder='email' type='email' autocomplete='email' tabindex='3' required)
 
 			//- Location
-			fieldset.location
-				legend Location
-				input.location__address(name='address' placeholder='address' type='text' autocomplete='street-address' tabindex='4' required)
-				input.location__zipcode(name='zip-code' placeholder='zip code' type='text' autocomplete='postal-code' tabindex='5' required)
+			fieldset.form__group
+				legend.form__group-name Location
+				input.form__input(name='address' placeholder='address' type='text' autocomplete='street-address' tabindex='4' required)
+				input.form__input(name='zip-code' placeholder='zip code' type='number' autocomplete='postal-code' tabindex='5' required)
 
 			//- Problem
-			fieldset.problem
-				legend Problem
-				textarea.problem__definition(name='problem' placeholder='describe your problem in a few words' type='text' tabindex='6')
+			fieldset.form__group
+				legend.form__group-name Problem
+				textarea.form__text-area(name='problem' placeholder='describe your problem in a few words' type='text' tabindex='6')
 
 			//- Submit
-			input(type='submit' value='Submit' tabindex='7')
+			input.form__input(type='submit' value='Submit' tabindex='7')
