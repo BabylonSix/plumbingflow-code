@@ -242,7 +242,7 @@ gulp.task( 'pro', ['pro_jade', 'pro_stylus', 'pro_js', 'pro_svg', 'sitemap'], fu
 // FTP Deploy Task
 gulp.task( 'deploy', function() {
 
-var conn = ftp.create( {
+var connection = ftp.create( {
 	host:     secrets.servers.production.serverhost,
 	user:     secrets.servers.production.username,
 	password: secrets.servers.production.password,
@@ -250,15 +250,12 @@ var conn = ftp.create( {
 } );
 
 var globs = [
-	'production/js/**',
-	'production/css/**',
-	'production/img/**',
-	'production/**/*.html.gz'
+	'production/**' // upload everything in the production folder
 ];
 
 return gulp.src( globs, { base: './production/', buffer: false } )
-	.pipe( conn.newer( secrets.servers.production.remotepath) )   // only upload newer files
-	.pipe( conn.dest( secrets.servers.production.remotepath ) );
+	.pipe( connection.newer( secrets.servers.production.remotepath) )   // only upload newer files
+	.pipe( connection.dest( secrets.servers.production.remotepath ) );
 
 } );
 
