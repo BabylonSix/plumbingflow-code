@@ -43,6 +43,10 @@ var zopfli       = require('gulp-zopfli'); // gzips files
 // apache could serve up pre-compressed content:
 // Options FollowSymLinks MultiViews
 
+// Deployment
+var secrets      = require('./secrets.json'); // password
+var ftp          = require('vinyl-ftp');
+
 
 
 //
@@ -230,3 +234,32 @@ gulp.task('sitemap', function () {
 
 // Production Build Task
 gulp.task( 'pro', ['pro_jade', 'pro_stylus', 'pro_js', 'pro_svg', 'sitemap'], function() {});
+
+
+
+
+// FTP Deploy Task
+gulp.task( 'deploy', function() {
+
+var conn = ftp.create( {
+	host:     secrets.servers.production.serverhost,
+	user:     secrets.servers.production.username,
+	password: secrets.servers.production.password,
+	parallel: 10
+} );
+
+var globs = [
+	'production/js/**',
+	'production/css/**',
+	'production/img/**',
+	'production/**/*.html.gz'
+];
+
+return gulp.src( globs, { base: './production/', buffer: false } )
+	.pipe( conn.newer( secrets.servers.production.remotepath) )   // only upload newer files
+	.pipe( conn.dest( secrets.servers.production.remotepath ) );
+
+} );
+
+
+
