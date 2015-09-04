@@ -28,6 +28,7 @@
     "gulp-stylus": "^2.0.6",
     "gulp-zopfli": "^1.0.0",
     "lost": "^6.5.0",
+    "run-sequence": "^1.1.2",
     "rupture": "^0.6.1",
     "typographic": "^2.9.3",
     "vinyl-ftp": "^0.4.5"

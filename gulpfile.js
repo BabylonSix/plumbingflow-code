@@ -5,14 +5,13 @@
 // Load Gulp
 var gulp         = require('gulp');
 
-// Browser Sync
-var browserSync  = require('browser-sync').create();
-var reload       = browserSync.reload;
-
 // Jade
 var jade         = require('gulp-jade');
 var findAffected = require('gulp-jade-find-affected');
 var minifyHTML   = require('gulp-minify-html');
+
+// Sitemaps
+var sitemap      = require('gulp-sitemap');
 
 // Stylus
 var stylus       = require('gulp-stylus');
@@ -31,11 +30,13 @@ var combineMQ    = require('gulp-combine-mq');
 // Image Compression
 var svgo         = require('imagemin-svgo');
 
-// Catch Errors
-var plumber      = require('gulp-plumber');
+// Browser Sync
+var browserSync  = require('browser-sync').create();
+var reload       = browserSync.reload;
 
-// Sitemaps
-var sitemap      = require('gulp-sitemap');
+/// Utilities
+var plumber      = require('gulp-plumber'); // Catch Errors
+var runSequence  = require('run-sequence');
 
 // Compression
 var zopfli       = require('gulp-zopfli'); // gzips files
@@ -44,8 +45,8 @@ var zopfli       = require('gulp-zopfli'); // gzips files
 // Options FollowSymLinks MultiViews
 
 // Deployment
-var secrets      = require('./secrets.json'); // password
 var ftp          = require('vinyl-ftp');
+var secrets      = require('./secrets.json'); // password
 
 
 
@@ -262,4 +263,7 @@ return gulp.src( globs, { base: './production/', buffer: false } )
 } );
 
 
-
+// Production Build and Deploy
+gulp.task( 'pd', function() {
+	runSequence( 'pro', 'deploy' )
+})
