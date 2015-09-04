@@ -14,15 +14,25 @@ block content
 			//- Contact
 			fieldset.form__group
 				legend.form__group-name Contact
-				input.form__input(name='full-name' placeholder='full name' type='text' tabindex='1' autofocus required)
-				input.form__input(name='phone-number' placeholder='phone number' type='tel' tabindex='2' required)
-				input.form__input(name='email' placeholder='email' type='email' autocomplete='email' tabindex='3' required)
+				label
+					input.form__input(name='full-name' type='text' tabindex='1' autofocus required)
+					.form__label Full Name
+				label
+					input.form__input(name='tel-number' type='tel' tabindex='2' required)
+					.form__label Tel Number
+				label
+					input.form__input(name='email' type='email' autocomplete='email' tabindex='3' required)
+					.form__label Email
 
 			//- Location
 			fieldset.form__group
 				legend.form__group-name Location
-				input.form__input(name='address' placeholder='address' type='text' autocomplete='street-address' tabindex='4' required)
-				input.form__input(name='zip-code' placeholder='zip code' type='number' autocomplete='postal-code' tabindex='5' required)
+				label
+					input.form__input(name='address' type='text' autocomplete='street-address' tabindex='4' required)
+					.form__label Address
+				label
+					input.form__input(name='zip-code' type='number' autocomplete='postal-code' tabindex='5' required)
+					.form__label Zip Code
 
 			//- Problem
 			fieldset.form__group

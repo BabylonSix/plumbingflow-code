@@ -2,6 +2,7 @@ $vertical-space = 130*$px
 $paragraph-space = 34*$px
 $paragraph-size = 22*$px
 $paragraph-lineheight = 34*$px
+
 .copy
 	&__head
 		display: flex
@@ -68,12 +69,14 @@ $paragraph-lineheight = 34*$px
 //
 
 .schedule-info
-	background: hsl(0, 0%, 96%)
-	margin: ($vertical-space - 60%) auto ($vertical-space - 60%) auto
-	border-radius: 4px
-	padding: 30px
-	max-width: 750px
-
+	background-color: darken(hsl(180, 20%, 99%), 2%)
+	margin: ($vertical-space) auto ($vertical-space - 60%) auto
+	border-radius: 4*$px
+	padding: 30*$px
+	padding-top: 50*$px
+	max-width: 900*$px
+	+below(729px)
+		margin: (0) auto ($vertical-space - 60%) auto
 	&__paragraph
 		font-size: $paragraph-size
 		line-height: $paragraph-lineheight
@@ -82,36 +85,60 @@ $paragraph-lineheight = 34*$px
 
 
 .form
-	max-width: 600*$px
+	max-width: 440*$px
 	width: 100%
-	margin: 0 auto
+	margin: 0 auto $vertical-space auto
 	&__group
-		border: 1*$px solid #bbb
-		background-color: hsl(0, 0%, 96%)
+		background-color: darken(hsl(180, 20%, 99%), 3%)
+		border: 0
 		border-radius: 4*$px
 		padding: 20*$px
-		margin-bottom: 20*$px
+		margin-bottom: 60*$px
 
 	&__group-name
 		font-style: bold
+		font-weight: 800 
 		font-size: ($paragraph-size + 6*$px)
+		
+	&__label
+		transform(translate(14px, -44px))
+		font-size: $paragraph-size
 		line-height: $paragraph-lineheight
-	// &__label
+		// margin-bottom: -20px
+		
 	&__input
 		display: block
-		border: 1*$px solid #bbb
+		border: 1*$px solid darken(hsl(180, 20%, 99%), 4%)
 		border-radius: 4*$px
 		max-width: 400*$px
-		width: 100% 
-		margin-bottom: 12*$px
+		width: 100%
+		margin: auto
+		padding: 12*$px
+		margin-top: 20*$px
 		font-size: $paragraph-size
 		line-height: $paragraph-lineheight
+
+		&:focus + .form__label
+			transform(translate(14px, -92px))
+			font-size: $paragraph-size
+			line-height: $paragraph-lineheight
+			color: darken(#bbb, 20%)
+			transition: all 0.3s
+			
+		&:valid + .form__label
+			transform(translate(14px, -92px))
+			font-size: $paragraph-size
+			line-height: $paragraph-lineheight
+			color: darken(#bbb, 20%)
+
 	&__text-area
-		border: 1*$px solid #bbb
+		border: 1*$px solid darken(hsl(180, 20%, 99%), 4%)
 		font-size: $paragraph-size
 		line-height: $paragraph-lineheight
+		padding: 12*$px
 		display: block
 		max-width: 600*$px
 		border-radius: 4*$px
 		width: 100% 
 		height: 300*$px
+
