@@ -27,7 +27,6 @@
     "gulp-sourcemaps": "^1.5.2",
     "gulp-stylus": "^2.0.6",
     "gulp-zopfli": "^1.0.0",
-    "install": "^0.1.8",
     "lost": "^6.5.0",
     "rupture": "^0.6.1",
     "typographic": "^2.9.3",
