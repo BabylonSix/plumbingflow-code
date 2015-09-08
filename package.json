@@ -22,6 +22,7 @@
     "gulp-minify-html": "^1.0.4",
     "gulp-plumber": "^1.0.1",
     "gulp-postcss": "^5.1.10",
+    "gulp-rucksack": "^0.1.2",
     "gulp-sitemap": "^2.2.0",
     "gulp-sourcemaps": "^1.5.2",
     "gulp-stylus": "^2.0.6",

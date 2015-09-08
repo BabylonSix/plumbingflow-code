@@ -26,6 +26,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var postcss      = require('gulp-postcss');
 var sourcemaps   = require('gulp-sourcemaps');
 var combineMQ    = require('gulp-combine-mq');
+var rucksack     = require('gulp-rucksack');
 
 // Image Compression
 var svgo         = require('imagemin-svgo');
@@ -111,13 +112,14 @@ gulp.task('stylus', function() {
 			use: [axis(), rupture(),typo()]
 		}))
 		.pipe(postcss([
-	lost()
-	]))
-	.pipe(combineMQ({
-	beautify: true
-	}))
-	.pipe(autoprefixer())
-	.pipe(sourcemaps.write('./sourcemaps/'))
+			lost()
+		]))
+		.pipe(rucksack())
+		.pipe(combineMQ({
+			beautify: true
+		}))
+		.pipe(autoprefixer())
+		.pipe(sourcemaps.write('./sourcemaps/'))
 		.pipe(gulp.dest(build.css))
 		.pipe(reload({stream: true}));
 
