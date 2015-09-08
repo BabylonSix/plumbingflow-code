@@ -72,7 +72,8 @@ var src = {
 var build = {
 	html: './build/',
 	css:  './build/css/',
-	js:   './build/js/'
+	js:   './build/js/',
+	img:  './build/img/'
 };
 
 // sitemap site url
@@ -135,8 +136,18 @@ gulp.task('js', function() {
 });
 
 
+// SVG Optimization
+gulp.task('svg', function() {
+	stream = gulp.src(src.svg)	
+		.pipe(plumber())
+		.pipe(gulp.dest(build.img))
+
+	return stream;
+})
+
+
 // Browser Sync
-gulp.task( 'default', ['jade', 'stylus', 'js'], function() {
+gulp.task( 'default', ['jade', 'stylus', 'js', 'svg'], function() {
 
 	browserSync.init({
 		server: 'build/'
@@ -145,6 +156,7 @@ gulp.task( 'default', ['jade', 'stylus', 'js'], function() {
 	gulp.watch( src.jadeAll,   [ 'jade'   ]);
 	gulp.watch( src.stylusAll, [ 'stylus' ]);
 	gulp.watch( src.js,        [ 'js'     ]);
+	gulp.watch( src.svg,       [ 'svg'     ]);
 
 });
 
