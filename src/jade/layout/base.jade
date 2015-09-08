@@ -20,7 +20,7 @@ html(lang='en')
 			| #{PageTitle}
 
 		link(rel='stylesheet', href='css/style.css')
-		script(src='js/app.js')
+		//- script(src='js/app.js')
 
 	body
 		.g-wrapper
@@ -39,6 +39,12 @@ html(lang='en')
 					article.gh-cta__message
 						h4.gh-cta__call Call for Plumbing Service
 						h4.gh-cta__phone (786) 393 1771
+
+			header.fh
+				img.fh-logo(src='img/mini-logo.svg')
+				.fh-cta
+				.fh-call
+
 
 			main.gc-wrapper
 				block content
