@@ -2,8 +2,22 @@ $vertical-space = 130*$px
 $paragraph-space = 34*$px
 $paragraph-size = 22*$px
 $paragraph-lineheight = 34*$px
+$vertical-space-iphone = ($vertical-space - 60%)
 
 .copy
+	padding: 20*$px
+	// margins
+	margin-bottom: $vertical-space
+	
+	+below(729px)
+			margin-bottom: $vertical-space-iphone
+
+	&:first-of-type // top margine
+		margin-top: ($vertical-space - 30%)
+		+below(729px)
+			margin-top: 0 
+			margin-bottom: $vertical-space-iphone
+
 	&__head
 		display: flex
 		align-items: center
@@ -36,11 +50,6 @@ $paragraph-lineheight = 34*$px
 		line-height: $paragraph-lineheight
 		margin-bottom: $paragraph-space
 
-	// margins
-	margin-bottom: $vertical-space
-	&:first-of-type // top margine
-		margin-top: ($vertical-space - 30%)
-
 .social
 	display: flex
 	flex-direction: row
@@ -70,77 +79,19 @@ $paragraph-lineheight = 34*$px
 
 .schedule-info
 	background-color: darken(hsl(180, 20%, 99%), 2%)
-	margin: ($vertical-space) auto ($vertical-space - 60%) auto
+	margin: ($vertical-space - 60%) auto ($vertical-space - 60%) auto
 	border-radius: 4*$px
 	padding: 30*$px
 	padding-top: 50*$px
 	max-width: 900*$px
 	+below(729px)
-		margin: (0) auto ($vertical-space - 60%) auto
+		padding 15*$px
+		margin: ($vertical-space - 75%) auto ($vertical-space - 60%) auto
+	+below(320px)
+		padding: 10*$px
 	&__paragraph
 		font-size: $paragraph-size
 		line-height: $paragraph-lineheight
 		margin-bottom: ($paragraph-space - 30%)
-
-
-
-.form
-	max-width: 440*$px
-	width: 100%
-	margin: 0 auto $vertical-space auto
-	z-index: 100
-	&__group
-		background-color: darken(hsl(180, 20%, 99%), 3%)
-		border: 0
-		border-radius: 4*$px
-		padding: 20*$px
-		margin-bottom: 60*$px
-
-	&__group-name
-		font-style: bold
-		font-weight: 800 
-		font-size: ($paragraph-size + 6*$px)
-		
-	&__label
-		transform(translate(14px, -44px))
-		font-size: $paragraph-size
-		line-height: $paragraph-lineheight
-		z-index: 100
-		// margin-bottom: -20px
-		
-	&__input
-		display: block
-		border: 1*$px solid darken(hsl(180, 20%, 99%), 4%)
-		border-radius: 4*$px
-		max-width: 400*$px
-		width: 100%
-		margin: auto
-		padding: 12*$px
-		margin-top: 20*$px
-		font-size: $paragraph-size
-		line-height: $paragraph-lineheight
-
-		&:focus + .form__label
-			transform(translate(14px, -92px))
-			font-size: $paragraph-size
-			line-height: $paragraph-lineheight
-			color: darken(#bbb, 20%)
-			transition: all 0.3s
-			
-		&:valid + .form__label
-			transform(translate(14px, -92px))
-			font-size: $paragraph-size
-			line-height: $paragraph-lineheight
-			color: darken(#bbb, 20%)
-
-	&__text-area
-		border: 1*$px solid darken(hsl(180, 20%, 99%), 4%)
-		font-size: $paragraph-size
-		line-height: $paragraph-lineheight
-		padding: 12*$px
-		display: block
-		max-width: 600*$px
-		border-radius: 4*$px
-		width: 100% 
-		height: 300*$px
-
+		&:last-of-type
+			margin-bottom: 0
