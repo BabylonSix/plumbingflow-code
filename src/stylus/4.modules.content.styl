@@ -2,15 +2,22 @@ $vertical-space = 130*$px
 $paragraph-space = 34*$px
 $paragraph-size = 22*$px
 $paragraph-lineheight = 34*$px
+$vertical-space-iphone = ($vertical-space - 60%)
 
 .copy
 	padding: 20*$px
 	// margins
 	margin-bottom: $vertical-space
+	
+	+below(729px)
+			margin-bottom: $vertical-space-iphone
+
 	&:first-of-type // top margine
 		margin-top: ($vertical-space - 30%)
-	// +below(320px)
-	// 	padding: 0
+		+below(729px)
+			margin-top: 0 
+			margin-bottom: $vertical-space-iphone
+
 	&__head
 		display: flex
 		align-items: center
