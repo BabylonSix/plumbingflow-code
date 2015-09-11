@@ -2,16 +2,47 @@ $fh()
 	display: inline-block
 
 .fh
+	z-index: 800
 	height: 64*$px
 	width: 100%  
-	background: hsla(197, 78%, 96%, 1)
-	margin-top: 200px
+	background: hsla(197, 78%, 96%, 98%)
+	display: flex
+	justify-content: space-around
+	align-items: center
+	position: sticky
+	top: 0
+	+above(730px)
+		display: none
 	
 	&-logo
 		$fh()
+		padding: 6px 22px
 
 	&-cta
 		$fh()
+		// width: 250px
+		font-size: 16*$px
+		font-weight: 600
+		padding: 16*$px 22*$px
+		border-radius: 4*$px
+		background: blue
+		color: white
+		text-align: center
+		+below(340px)
+			display: none
+		&:hover
+			background: darken(red, 10%)
 
-	&-phone
+	&-call
 		$fh()
+		font-size: 20*$px
+		color: blue
+		font-weight: 600
+		+below(340px)
+			font-weight: 600
+			padding: 12*$px 22*$px
+			border-radius: 4*$px
+			background: blue
+			color: white
+			text-align: center
+		
