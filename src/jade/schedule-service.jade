@@ -14,12 +14,15 @@ block content
 			//- Contact
 			fieldset.form__group
 				legend.form__group-name Contact
+
 				label
 					input.form__input(name='full-name' type='text' tabindex='1' autofocus required)
 					.form__label Full Name
+
 				label
 					input.form__input(name='tel-number' type='tel' tabindex='2' required)
 					.form__label Tel Number
+
 				label
 					input.form__input(name='email' type='email' autocomplete='email' tabindex='3' required)
 					.form__label Email
@@ -27,9 +30,11 @@ block content
 			//- Location
 			fieldset.form__group
 				legend.form__group-name Location
+
 				label
 					input.form__input(name='address' type='text' autocomplete='street-address' tabindex='4' required)
 					.form__label Address
+
 				label
 					input.form__input(name='zip-code' type='number' autocomplete='postal-code' tabindex='5' required)
 					.form__label Zip Code
@@ -40,4 +45,4 @@ block content
 				textarea.form__text-area(name='problem' placeholder='describe your problem in a few words' type='text' tabindex='6')
 
 			//- Submit
-			input.form__input(type='submit' value='Submit' tabindex='7')
+			input.form__submit(type='submit' value='Submit' tabindex='7')
