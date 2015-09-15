@@ -2,47 +2,38 @@
 // Global header
 //
 
+
 .gh
 	gh-height()
-	+below(729px)
+	display: flex
+	container: nowrap
+	justify-content: space-between
+	background: hsl(196, 79%, 96%)
+	+below(920px)
 		display: none
 
 // Logo
-$gh-logo = 8
 .gh-logo
 	gh-height()
 	background: linear-gradient(left, $logo-fade-color, $logo-bg-color)
-	lost-align: center
-	+above(1020px)
-		lost-column: $gh-logo/24 0 0
-	&__logo
-		height: 99px
-		width: 267px
-		float: left
+	padding: 0 40*$px
+	display: flex
+	align-items: center
 		
 		
 // Navigation
 .gh-menu
 	gh-height()
-	background: hsl(196, 79%, 96%)
-	+below(1019px)
+	display: flex
+	align-items: center
+	justify-content: flex-end
+	max-width: 600px
+	padding-right: 20*$px
+	width: 100% 
+	+below(920px)
 		display: none
-	+above(1020px)
-		// column = 24 - (lost-column + cta-box) / 24
-		lost-column: (24 - ( $gh-logo + 8 ))/24 0 0
-
-// * {
-// 	border: 1px solid black
-// }
 
 .gh-nav
-	v-align()
-	list-style-type: none
-	float: right
-	margin-right: 20px  
-	&__item
-		display: inline-block
-		position: relative 
 		
 	&__link
 		button(hsl(205, 90%, 60%))
@@ -51,14 +42,12 @@ $gh-logo = 8
 
 
 // Call to Action
-$gh-cta = 8
 .gh-cta
+	display: flex
+	align-items: center
+	padding: 0 20*$px
 	gh-height()
-	background: hsl(206, 86%, 62%)
-	lost-align: middle-center
-	position: relative
-	+above(1020px)
-		lost-column $gh-cta/24 0 0
+	background: blue
 	
 	&__droplets
 		size: 7px 37px
@@ -74,19 +63,14 @@ $gh-cta = 8
 	&__call
 		font-size: 1.46em
 		color: white
-		margin: 0
+		// margin: 0
 		+above(420px)
 			font-size: 1.6em
 			
 	&__phone
 		font-size: 2.6em
 		color: white
-		margin: 0
-		color: hsl(0, 0%, 20%)
+		// margin: 0
+		color: black
 		+above(420px)
 			font-size: 3em
-
-// iPad sized = two column header
-+between(730px, 1020px)
-	.gh-logo,	.gh-cta
-		lost-column: 1/2 0 0
