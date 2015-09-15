@@ -8,15 +8,17 @@
 		display: none
 
 // Logo
+$gh-logo = 8
 .gh-logo
 	gh-height()
 	background: linear-gradient(left, $logo-fade-color, $logo-bg-color)
 	lost-align: center
 	+above(1020px)
-		lost-column: 6/24 0 0
+		lost-column: $gh-logo/24 0 0
 	&__logo
 		height: 99px
 		width: 267px
+		float: left
 		
 		
 // Navigation
@@ -27,30 +29,36 @@
 		display: none
 	+above(1020px)
 		// column = 24 - (lost-column + cta-box) / 24
-		lost-column: (24 - ( 6 + 8 ))/24 0 0
-	
+		lost-column: (24 - ( $gh-logo + 8 ))/24 0 0
+
+// * {
+// 	border: 1px solid black
+// }
+
 .gh-nav
 	v-align()
 	list-style-type: none
+	float: right
+	margin-right: 20px  
 	&__item
 		display: inline-block
+		position: relative 
+		
 	&__link
 		button(hsl(205, 90%, 60%))
-		font-weight: 800
-		font-size: 18px
-		+above(1160px)
-				font-size: 22px
-				font-weight: 600
+		font-size: 22px
+		font-weight: 600
 
 
 // Call to Action
+$gh-cta = 8
 .gh-cta
 	gh-height()
 	background: hsl(206, 86%, 62%)
 	lost-align: middle-center
 	position: relative
 	+above(1020px)
-		lost-column 8/24 0 0
+		lost-column $gh-cta/24 0 0
 	
 	&__droplets
 		size: 7px 37px
