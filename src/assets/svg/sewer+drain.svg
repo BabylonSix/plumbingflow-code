@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="173px" height="173px" viewBox="0 0 173 173" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch Beta 3.4 (15009) - http://www.bohemiancoding.com/sketch -->
+    <title>sewer+drain</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#7CDAFF" offset="0%"></stop>
+            <stop stop-color="#46B3FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="WireFrame-Storyboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Landing-Page-v2" sketch:type="MSArtboardGroup" transform="translate(-679.000000, -236.000000)">
+            <g id="sewer+drain" sketch:type="MSLayerGroup" transform="translate(679.000000, 236.000000)">
+                <rect id="Rectangle-159-Copy-2" fill="#FCFCFC" sketch:type="MSShapeGroup" x="0" y="0" width="173" height="173" rx="10"></rect>
+                <g id="Group" transform="translate(39.000000, 48.000000)" stroke-width="7" sketch:type="MSShapeGroup">
+                    <path d="M92.5303189,1.19402985 L16.8420422,1.19402985 C16.8420422,1.19402985 2.12358118e-07,1.58960171 0,17.9522808 C-2.12358054e-07,34.3149598 16.7389159,34.6079185 16.7389159,34.6079185 L76.2840478,34.6079185 C76.2840478,34.6079185 95.9999969,32.4791681 96,54.2257814 C96.0000031,75.9723947 70.9320202,75.9723947 70.9320202,75.9723947 L0.199363669,75.9723945" id="Path-1113" stroke="url(#linearGradient-1)"></path>
+                    <path d="M39,34.6 L54.6,34.6" id="Path-1114" stroke="#4A4A4A"></path>
+                    <path d="M39,1.19402985 L54.6,1.19402985" id="Path-1114-Copy-2" stroke="#4A4A4A"></path>
+                    <path d="M39,75.98 L54.6,75.98" id="Path-1114-Copy" stroke="#4A4A4A"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

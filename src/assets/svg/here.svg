@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="126px" height="126px" viewBox="0 0 126 126" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch Beta 3.4 (15009) - http://www.bohemiancoding.com/sketch -->
+    <title>here</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs></defs>
+    <g id="WireFrame-Storyboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Landing-Page-v2" sketch:type="MSArtboardGroup" transform="translate(-256.000000, -1262.000000)">
+            <g id="If-a-service-costs-X-+-We-don’t-play-games-+-games" sketch:type="MSLayerGroup" transform="translate(257.000000, 1263.000000)">
+                <g id="here" sketch:type="MSShapeGroup">
+                    <path d="M0,62 C0,27.7583455 27.7508167,0 62,0 C96.2416545,0 124,27.7508167 124,62 C124,96.2416545 96.2491833,124 62,124 C27.7583455,124 0,96.2491833 0,62 L0,62 Z" id="Shape" stroke="#1485E0" stroke-width="2"></path>
+                    <path d="M53.8446396,71.1560899 L29.48992,66.5298705 C27.6181435,66.1743235 27.4894189,65.2033794 29.2203907,64.3646224 L87.034268,36.3504224 C88.7704238,35.5091535 89.4885056,36.2351133 88.6497275,37.9662884 L60.6348191,95.7869551 C59.7935289,97.5233148 58.826682,97.3972391 58.4696952,95.5169375 L53.8446396,71.1560899 Z" fill="#1485E0"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
