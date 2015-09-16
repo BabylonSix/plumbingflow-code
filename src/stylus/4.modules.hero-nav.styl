@@ -1,4 +1,4 @@
-.hero-menu
+.hero
 	width: 100%
 	height: 600px
 	display: flex
@@ -9,27 +9,42 @@
 	&__section
 		height: 490px
 		width: 230px
-		// background: silver
 		border-radius: 8*$px
 		position: relative
 
-		//- hover on the container is used because a hover on a sibling element
-		//- causes the box to flicker
-		&:hover > .hero-menu__nav
+		// Display .hero__nav on hover
+		&:hover > .hero__nav
 			display: flex
 			flex-flow: column
-			justify-content: space-around
+			// justify-content: space-between
 			align-items: center
 
 	&__info
-		background: yellow
+		// background: silver
 		height: 490px
 		width: 230px
 		border-radius: 8*$px
 		position: absolute
 		top: 0
 		z-index: 100
-
+		display: flex
+		flex-flow: column
+		align-items: center
+	
+	&__logo
+		margin-top 30px
+	
+	&__header
+		font-size: 30px
+		font-weight: 400
+		margin-top 30px
+		
+	&__paragraph
+		font-size: 16px
+		line-height: 30px
+		margin: 15px 30px
+		 
+			
 	&__nav
 		z-index: 200
 		background: hsla(0, 0%, 24%, 90%)
@@ -41,15 +56,17 @@
 		top: 0
 	
 	&__link
+		$vertical-gutter = 30px
 		button(hsla(210, 100%, 44%, 1))
 		text-align: center  
-		font-size: 22px
+		font-size: 20px
 		font-weight: 400
-		width: 170px
+		width: 180px
 		hight: 30px
 		color: white
-		height: 40px
-		// margin: auto
+		margin-bottom: $vertical-gutter
+		&:first-of-type
+			margin-top: $vertical-gutter
 
 		&:hover
-			button(darken(hsla(210, 100%, 44%, 1), 10%))
+			background: darken(hsla(210, 100%, 44%, 1), 20%)
