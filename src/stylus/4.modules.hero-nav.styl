@@ -1,24 +1,24 @@
-.hero
+
+.hero // Contains the hero nav sections
 	width: 100%
 	height: 600px
 	display: flex
 	justify-content: space-around
 	align-items: center
 	
-	&__section
+	&__section // A hero nav section, eg: plumbing, sewer & drain, etc
 		height: 490px
 		width: 230px
 		border-radius: 8*$px
 		position: relative
 
-		// Display .hero__nav on hover
-		&:hover > .hero__nav
+		&:hover > .hero__nav // Display .hero__nav on hover instead of default .hero__info
 			display: flex
 			flex-flow: column
 			align-items: center
 			background: hsla(0, 0%, 24%, 90%)
 
-	&__info
+	&__info // Container that's shown by default
 		height: 490px
 		width: 230px
 		background: hsla(0, 0%, 97%, 1)
@@ -30,21 +30,21 @@
 		flex-flow: column
 		align-items: center
 	
-	&__logo
+	&__logo // info containers logo
 		margin-top 30px
 	
-	&__header
+	&__header // info containers header
 		font-size: 30px
 		font-weight: 400
 		margin-top 30px
 		
-	&__paragraph
+	&__paragraph // info containers paragraph
 		font-size: 16px
 		line-height: 30px
 		margin: 15px 30px
 		 
 			
-	&__nav
+	&__nav // Container that's shown when hero section is hovered over
 		z-index: 200
 		height: 490px
 		width: 230px
@@ -53,8 +53,7 @@
 		position: absolute
 		top: 0
 	
-	&__link
-		$vertical-gutter = 30px
+	&__link // links to more in depth parts of the section
 		button(hsla(210, 100%, 44%, 1))
 		text-align: center  
 		font-size: 20px
@@ -62,9 +61,8 @@
 		width: 180px
 		hight: 30px
 		color: white
+
+		$vertical-gutter = 30px // control the vertical gutter
 		margin-bottom: $vertical-gutter
 		&:first-of-type
 			margin-top: $vertical-gutter
-
-		&:hover
-			background: darken(hsla(210, 100%, 44%, 1), 20%)
