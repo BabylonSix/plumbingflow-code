@@ -1,70 +1,126 @@
-.hero
+.hero // Contains the hero nav sections
 	width: 100%
-	height: 600px
+	height: 100%
+	min-height: 600px
 	display: flex
 	justify-content: space-around
 	align-items: center
-	
-	&__section
+	flex-wrap: wrap
+	background: hsla(0, 0%, 97%, 1)
+	margin-bottom: $vertical-space-iphone
+	$horizontal-divider-bottom()
+	+between(800px, 960px)
+		justify-content: space-between
+	+between(320px, 460px)
+		justify-content: space-between
+
+	// How the hero section looks at different sizes
+	$hero-section()
+		border-radius: 8*$px
 		height: 490px
 		width: 230px
-		border-radius: 8*$px
+		+between(800px, 920px)
+			border-radius: 8*$px
+			width: 200px
+			height: 520px 
+		+between(600px, 800px)
+			border-radius: 0
+			width: 270px
+		+between(320px, 600px)
+			border-radius: 0
+			width: 200px
+		+below(320px)
+			width: 250px
+			border-radius: 8*$px
+
+	&__section // A hero nav section, eg: plumbing, sewer & drain, etc
+		$hero-section()
 		position: relative
 
-		// Display .hero__nav on hover
+		// Display .hero__nav on hover instead of default .hero__info
 		&:hover > .hero__nav
 			display: flex
 			flex-flow: column
 			align-items: center
-			background: hsla(0, 0%, 24%, 90%)
+			background: hsla(0, 0%, 24%, 96%)
 
-	&__info
-		height: 490px
-		width: 230px
+	&__info // Container that's shown by default
+		$hero-section()
 		background: hsla(0, 0%, 97%, 1)
-		border-radius: 8*$px
 		position: absolute
 		top: 0
 		z-index: 100
 		display: flex
 		flex-flow: column
 		align-items: center
-	
-	&__logo
+
+	&__logo // info containers logo
 		margin-top 30px
-	
-	&__header
+		border 1px solid blue
+		border-radius: 8px 
+
+	&__header // info containers header
 		font-size: 30px
 		font-weight: 400
 		margin-top 30px
+		user-select: none
+		// iPhone 4, 4c, 4s
+		+below(320px)
+			font-size: 36px
+			margin-top 20px
+			
 		
-	&__paragraph
+		// special rule
+		// when container width is 200px, make margin smaller
+		+between(800px, 920px)
+			margin-top 20px
+		+below(600px)
+			margin-top 20px
+		// end special rule
+
+
+	&__paragraph // info containers paragraph
 		font-size: 16px
 		line-height: 30px
 		margin: 15px 30px
-		 
+		user-select: none
+		// iPhone 4, 4c, 4s
+		+below(320px)
+			font-size: 18px
+			line-height: 30px
+			margin-top 20px
 			
-	&__nav
-		z-index: 200
-		height: 490px
-		width: 230px
-		border-radius: 8*$px
+		
+		//special rule
+		// when container width is 200px, make margin smaller
+		+between(800px, 920px)
+			margin: 10px 20px
+		+below(600px)
+			margin: 10px 20px
+		// end special rule
+			
+
+	&__nav // Container that's shown when hero section is hovered over
+		$hero-section()
 		display: none
 		position: absolute
 		top: 0
-	
-	&__link
-		$vertical-gutter = 30px
+		z-index: 200
+
+	&__link // links to more in depth parts of the section
 		button(hsla(210, 100%, 44%, 1))
-		text-align: center  
+		text-align: center
 		font-size: 20px
 		font-weight: 400
 		width: 180px
 		hight: 30px
 		color: white
+		+below(920px)
+			font-size: 18px
+		+below(600px)
+			font-weight: 300
+
+		$vertical-gutter = 30px // control the vertical gutter
 		margin-bottom: $vertical-gutter
 		&:first-of-type
 			margin-top: $vertical-gutter
-
-		&:hover
-			background: darken(hsla(210, 100%, 44%, 1), 20%)

@@ -5,6 +5,7 @@
 
 .gh
 	gh-height()
+	$horizontal-divider-bottom()
 	display: flex
 	container: nowrap
 	justify-content: space-between
@@ -15,7 +16,8 @@
 // Logo
 .gh-logo
 	gh-height()
-	background: linear-gradient(left, $logo-fade-color, $logo-bg-color)
+	$horizontal-divider-bottom()
+	background: linear-gradient(to right, $logo-fade-color, $logo-bg-color)
 	padding: 0 40*$px
 	display: flex
 	align-items: center

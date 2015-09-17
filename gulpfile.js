@@ -109,7 +109,7 @@ gulp.task('stylus', function() {
 		.pipe(sourcemaps.init())
 		.pipe(stylus({
 			errors: true,
-			use: [axis(), rupture(),typo()]
+			use: [axis(), rupture(), typo()]
 		}))
 		.pipe(postcss([
 			lost()
@@ -118,7 +118,7 @@ gulp.task('stylus', function() {
 		.pipe(combineMQ({
 			beautify: true
 		}))
-		.pipe(autoprefixer())
+		.pipe(autoprefixer({ browsers: ['last 2 versions', '> 5%'] }))
 		.pipe(sourcemaps.write('./sourcemaps/'))
 		.pipe(gulp.dest(build.css))
 		.pipe(reload({stream: true}));
@@ -206,7 +206,7 @@ gulp.task('pro_stylus', function() {
 	lost()
 	]))
 	.pipe(combineMQ())
-	.pipe(autoprefixer())
+	.pipe(autoprefixer({ browsers: ['last 2 versions', '> 5%'] }))
 	.pipe(minifyCSS({ structureMinimization: true })) 
 	.pipe(zopfli())
 	.pipe(gulp.dest(pro.css));

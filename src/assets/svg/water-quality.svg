@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="173px" height="173px" viewBox="0 0 173 173" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="180px" height="180px" viewBox="0 0 180 180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch Beta 3.4 (15009) - http://www.bohemiancoding.com/sketch -->
     <title>water-quality</title>
     <desc>Created with Sketch Beta.</desc>
     <defs></defs>
     <g id="WireFrame-Storyboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Landing-Page-v2" sketch:type="MSArtboardGroup" transform="translate(-399.000000, -231.000000)">
-            <g id="water-quality" sketch:type="MSLayerGroup" transform="translate(399.000000, 231.000000)">
-                <rect id="Rectangle-159-Copy-3" fill="#FCFCFC" sketch:type="MSShapeGroup" x="0" y="0" width="173" height="173" rx="10"></rect>
-                <g id="water" transform="translate(47.000000, 32.000000)" stroke="#46B3FF" sketch:type="MSShapeGroup">
-                    <path d="M40.3445578,110 C62.6262418,110 80.6891156,95.4247233 80.6891156,73.3333333 C80.6891156,51.2419433 44.052987,6.89287399e-16 40.3445578,0 C36.6361286,-6.19125332e-16 0,51.2419433 0,73.3333333 C0,95.4247233 18.0628738,110 40.3445578,110 Z" id="base" stroke-width="5.25"></path>
-                    <path d="M41.3285714,94.2857143 L41.3285714,94.2857143 C54.3715084,94.2857143 64.944898,83.7324262 64.944898,70.7142857" id="detail" stroke-width="3" stroke-linecap="round"></path>
+        <g id="Landing-Page-v2-iPhone-6+" sketch:type="MSArtboardGroup" transform="translate(-14.000000, -492.000000)">
+            <g id="water-quality" sketch:type="MSLayerGroup" transform="translate(14.000000, 492.000000)">
+                <rect id="Rectangle-159-Copy-3" fill="#FCFCFC" sketch:type="MSShapeGroup" x="0" y="0" width="180" height="180" rx="10.4046243"></rect>
+                <g id="water" transform="translate(48.901734, 33.294798)" stroke="#46B3FF" sketch:type="MSShapeGroup">
+                    <path d="M41.9769966,114.450867 C65.1602516,114.450867 83.9539932,99.2858393 83.9539932,76.300578 C83.9539932,53.3153168 45.8354778,7.1717764e-16 41.9769966,0 C38.1185153,-6.44176646e-16 0,53.3153168 0,76.300578 C0,99.2858393 18.7937415,114.450867 41.9769966,114.450867 Z" id="base" stroke-width="5.46242775"></path>
+                    <path d="M43.0008258,98.1007432 L43.0008258,98.1007432 C56.5715116,98.1007432 67.5727262,87.1204435 67.5727262,73.5755574" id="detail" stroke-width="3.12138728" stroke-linecap="round"></path>
+                </g>
+                <g id="hamburger-menu" transform="translate(148.000000, 150.000000)" fill="#3FAAF5" sketch:type="MSShapeGroup">
+                    <rect id="hamburger" x="0" y="0" width="23" height="5" rx="4"></rect>
+                    <rect id="hamburger" x="0" y="8" width="23" height="5" rx="4"></rect>
+                    <rect id="hamburger" x="0" y="16" width="23" height="5" rx="4"></rect>
                 </g>
             </g>
         </g>

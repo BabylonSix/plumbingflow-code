@@ -1,21 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="18px" height="42px" viewBox="0 0 18 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="36px" height="50px" viewBox="0 0 36 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch Beta 3.4 (15009) - http://www.bohemiancoding.com/sketch -->
     <title>mini-logo</title>
     <desc>Created with Sketch Beta.</desc>
     <defs>
-        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+        <linearGradient x1="-6.25918222%" y1="50%" x2="87.4816877%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#FFFFFFD04FEB" offset="0%"></stop>
+            <stop stop-color="#0A72EF" offset="13.7938267%"></stop>
+            <stop stop-color="#529DF3" offset="30.5253639%"></stop>
+            <stop stop-color="#B1D5FA" stop-opacity="0.944548234" offset="49.1577995%"></stop>
+            <stop stop-color="#D6ECFC" stop-opacity="0" offset="87.2984456%"></stop>
+            <stop stop-color="#EDF9FD" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="94.3318483%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#82BCFF" offset="0%"></stop>
+            <stop stop-color="#EDF9FD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
             <stop stop-color="#529DF3" offset="0%"></stop>
             <stop stop-color="#0F6EDC" offset="100%"></stop>
         </linearGradient>
     </defs>
     <g id="WireFrame-Storyboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="iphone-6+-Sticky-Head" sketch:type="MSArtboardGroup" transform="translate(-19.000000, -6.000000)">
-            <g id="Group" sketch:type="MSLayerGroup">
-                <g id="mini-logo" transform="translate(19.792916, 6.750000)" sketch:type="MSShapeGroup">
-                    <path d="M0,25.875 L0,40.5 L3.14818661,40.5 L3.14818661,34.457458 L10.3582553,34.457458 L10.3582553,31.9585084 L3.14818661,31.9585084 L3.14818661,28.5787815 L11.280654,28.5787815 L11.280654,25.875 L0,25.875 Z" id="Type-something-Copy" fill="#0F6EDC"></path>
-                    <path d="M3.25780759,6.88235294 L3.25780759,2.49894958 L5.78935234,2.49894958 C6.16286081,2.49894958 6.52253023,2.52626023 6.86837141,2.58088235 C7.21421259,2.63550447 7.51854826,2.74133325 7.78138755,2.89837185 C8.04422684,3.05541045 8.2551868,3.27730949 8.41427374,3.56407563 C8.57336068,3.85084177 8.65290296,4.22636322 8.65290296,4.69065126 C8.65290296,5.1549393 8.57336068,5.53046075 8.41427374,5.81722689 C8.2551868,6.10399303 8.04422684,6.32589207 7.78138755,6.48293067 C7.51854826,6.63996927 7.21421259,6.74579805 6.86837141,6.80042017 C6.52253023,6.85504229 6.16286081,6.88235294 5.78935234,6.88235294 L3.25780759,6.88235294 Z M0,0 L0,14.625 L3.25780759,14.625 L3.25780759,9.38130252 L6.68161811,9.38130252 C7.60847246,9.38130252 8.39697851,9.2481631 9.04715992,8.98188025 C9.69734134,8.71559741 10.2264704,8.36397277 10.634563,7.9269958 C11.0426556,7.49001882 11.3400745,6.98818561 11.5268288,6.42148109 C11.713583,5.85477658 11.8069587,5.27783907 11.8069587,4.69065126 C11.8069587,4.08980792 11.713583,3.50945658 11.5268288,2.94957983 C11.3400745,2.38970308 11.0426556,1.8912837 10.634563,1.45430672 C10.2264704,1.01732975 9.69734134,0.665705113 9.04715992,0.399422269 C8.39697851,0.133139425 7.60847246,0 6.68161811,0 L0,0 Z" id="Type-something-Copy-2" fill="#519DF4"></path>
-                    <path d="M13.5367847,0 L13.5367847,40.5 L16.9209809,40.5 L16.9209809,0 L13.5367847,0 Z" id="Path" fill="url(#linearGradient-1)"></path>
+        <g id="Landing-Page-v2-iPhone-6+" sketch:type="MSArtboardGroup" transform="translate(-1.000000, -2.000000)">
+            <g id="floating-menu" sketch:type="MSLayerGroup">
+                <g id="mini-logo" transform="translate(1.792916, 2.750000)" sketch:type="MSShapeGroup">
+                    <path d="M0.198365123,24.25 L21.6438692,48 L21.6438686,0.5 L0.198365123,24.25 Z" id="Path-Copy" stroke="url(#linearGradient-2)" stroke-width="0.5" fill="url(#linearGradient-1)"></path>
+                    <path d="M18,29.875 L18,44.5 L21.1481866,44.5 L21.1481866,38.457458 L28.3582553,38.457458 L28.3582553,35.9585084 L21.1481866,35.9585084 L21.1481866,32.5787815 L29.280654,32.5787815 L29.280654,29.875 L18,29.875 Z" id="Type-something-Copy" fill="#0F6EDC"></path>
+                    <path d="M21.2578076,10.8823529 L21.2578076,6.49894958 L23.7893523,6.49894958 C24.1628608,6.49894958 24.5225302,6.52626023 24.8683714,6.58088235 C25.2142126,6.63550447 25.5185483,6.74133325 25.7813875,6.89837185 C26.0442268,7.05541045 26.2551868,7.27730949 26.4142737,7.56407563 C26.5733607,7.85084177 26.652903,8.22636322 26.652903,8.69065126 C26.652903,9.1549393 26.5733607,9.53046075 26.4142737,9.81722689 C26.2551868,10.103993 26.0442268,10.3258921 25.7813875,10.4829307 C25.5185483,10.6399693 25.2142126,10.745798 24.8683714,10.8004202 C24.5225302,10.8550423 24.1628608,10.8823529 23.7893523,10.8823529 L21.2578076,10.8823529 Z M18,4 L18,18.625 L21.2578076,18.625 L21.2578076,13.3813025 L24.6816181,13.3813025 C25.6084725,13.3813025 26.3969785,13.2481631 27.0471599,12.9818803 C27.6973413,12.7155974 28.2264704,12.3639728 28.634563,11.9269958 C29.0426556,11.4900188 29.3400745,10.9881856 29.5268288,10.4214811 C29.713583,9.85477658 29.8069587,9.27783907 29.8069587,8.69065126 C29.8069587,8.08980792 29.713583,7.50945658 29.5268288,6.94957983 C29.3400745,6.38970308 29.0426556,5.8912837 28.634563,5.45430672 C28.2264704,5.01732975 27.6973413,4.66570511 27.0471599,4.39942227 C26.3969785,4.13313942 25.6084725,4 24.6816181,4 L18,4 Z" id="Type-something-Copy-2" fill="#519DF4"></path>
+                    <path d="M31.5367847,4 L31.5367847,44.5 L34.9209809,44.5 L34.9209809,4 L31.5367847,4 Z" id="Path" fill="url(#linearGradient-3)"></path>
+                    <path id="Path-1379" stroke="#979797" d=""></path>
+                    <path id="Path-1384" stroke="#979797" d=""></path>
                 </g>
             </g>
         </g>
