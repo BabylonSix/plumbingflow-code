@@ -19,6 +19,8 @@ $fh()
 		$fh()
 		padding-top: 6px 
 		padding-left: 10px
+		+below(360px)
+			display: none
 
 	&-cta
 		$fh()
@@ -41,6 +43,9 @@ $fh()
 		color: blue
 		font-weight: 600
 		margin-right: 20px
+		+below(360px)
+			margin: auto
+			
 		+below(340px)
 			font-weight: 600
 			padding: 12*$px 22*$px

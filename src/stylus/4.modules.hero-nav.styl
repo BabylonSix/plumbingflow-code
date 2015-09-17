@@ -3,17 +3,14 @@
 	height: 100%
 	min-height: 600px
 	display: flex
+	flex-direction: row
 	justify-content: space-around
 	align-items: center
 	flex-wrap: wrap
 	background: hsla(0, 0%, 97%, 1)
 	margin-bottom: $vertical-space-iphone
 	$horizontal-divider-bottom()
-	+between(800px, 960px)
-		justify-content: space-between
-	+between(320px, 460px)
-		justify-content: space-between
-
+			
 	// How the hero section looks at different sizes
 	$hero-section()
 		border-radius: 8*$px
@@ -26,10 +23,13 @@
 		+between(600px, 800px)
 			border-radius: 0
 			width: 270px
-		+between(320px, 600px)
+		+between(414px, 600px)
 			border-radius: 0
 			width: 200px
-		+below(320px)
+		+between(360px, 414px)
+			border-radius: 0
+			width: 186px
+		+below(360px)
 			width: 250px
 			border-radius: 8*$px
 
