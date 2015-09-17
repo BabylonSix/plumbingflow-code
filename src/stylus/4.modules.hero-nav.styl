@@ -1,12 +1,14 @@
 
 .hero // Contains the hero nav sections
 	width: 100%
+	height: 100%
 	min-height: 600px
 	display: flex
 	justify-content: space-around
 	align-items: center
 	flex-wrap: wrap
 	background: hsla(0, 0%, 97%, 1)
+	margin-bottom: $vertical-space-iphone
 	$horizontal-divider()
 	+below(460px)
 		justify-content: space-between
@@ -19,6 +21,7 @@
 		+between(800px, 920px)
 			border-radius: 0
 			width: 200px
+			height: 520px 
 		+between(600px, 800px)
 			border-radius: 0
 			width: 270px
@@ -30,7 +33,8 @@
 		$hero-section()
 		position: relative
 
-		&:hover > .hero__nav // Display .hero__nav on hover instead of default .hero__info
+		// Display .hero__nav on hover instead of default .hero__info
+		&:hover > .hero__nav
 			display: flex
 			flex-flow: column
 			align-items: center
@@ -53,11 +57,29 @@
 		font-size: 30px
 		font-weight: 400
 		margin-top 30px
+		user-select: none
+		
+		// special rule
+		// when container width is 200px, make margin smaller
+		+between(800px, 920px)
+			margin-top 20px
+		+below(600px)
+			margin-top 20px
+		// end special rule
 
 	&__paragraph // info containers paragraph
 		font-size: 16px
 		line-height: 30px
 		margin: 15px 30px
+		user-select: none
+		
+		//special rule
+		// when container width is 200px, make margin smaller
+		+between(800px, 920px)
+			margin: 10px 20px
+		+below(600px)
+			margin: 10px 20px
+		// end special rule
 
 	&__nav // Container that's shown when hero section is hovered over
 		$hero-section()
