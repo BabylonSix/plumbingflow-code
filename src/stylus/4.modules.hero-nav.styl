@@ -12,7 +12,7 @@
 	$horizontal-divider()
 	+between(800px, 960px)
 		justify-content: space-between
-	+below(460px)
+	+between(460px, 320px)
 		justify-content: space-between
 
 	// How the hero section looks at different sizes
@@ -27,9 +27,11 @@
 		+between(600px, 800px)
 			border-radius: 0
 			width: 270px
-		+below(600px)
+		+between(600px, 320px)
 			border-radius: 0
 			width: 200px
+		+below(320px)
+			width: 250px
 
 	&__section // A hero nav section, eg: plumbing, sewer & drain, etc
 		$hero-section()
@@ -62,6 +64,11 @@
 		font-weight: 400
 		margin-top 30px
 		user-select: none
+		// iPhone 4, 4c, 4s
+		+below(320px)
+			font-size: 36px
+			margin-top 20px
+			
 		
 		// special rule
 		// when container width is 200px, make margin smaller
@@ -71,11 +78,18 @@
 			margin-top 20px
 		// end special rule
 
+
 	&__paragraph // info containers paragraph
 		font-size: 16px
 		line-height: 30px
 		margin: 15px 30px
 		user-select: none
+		// iPhone 4, 4c, 4s
+		+below(320px)
+			font-size: 18px
+			line-height: 30px
+			margin-top 20px
+			
 		
 		//special rule
 		// when container width is 200px, make margin smaller
@@ -84,6 +98,7 @@
 		+below(600px)
 			margin: 10px 20px
 		// end special rule
+			
 
 	&__nav // Container that's shown when hero section is hovered over
 		$hero-section()
