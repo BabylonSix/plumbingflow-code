@@ -12,7 +12,7 @@
                     <path d="M41.9769966,114.450867 C65.1602516,114.450867 83.9539932,99.2858393 83.9539932,76.300578 C83.9539932,53.3153168 45.8354778,7.1717764e-16 41.9769966,0 C38.1185153,-6.44176646e-16 0,53.3153168 0,76.300578 C0,99.2858393 18.7937415,114.450867 41.9769966,114.450867 Z" id="base" stroke-width="5.46242775"></path>
                     <path d="M43.0008258,98.1007432 L43.0008258,98.1007432 C56.5715116,98.1007432 67.5727262,87.1204435 67.5727262,73.5755574" id="detail" stroke-width="3.12138728" stroke-linecap="round"></path>
                 </g>
-                <g id="hamburger-menu" transform="translate(148.000000, 150.000000)" fill="#979797" sketch:type="MSShapeGroup">
+                <g id="hamburger-menu" transform="translate(148.000000, 150.000000)" fill="#3FAAF5" sketch:type="MSShapeGroup">
                     <rect id="hamburger" x="0" y="0" width="23" height="5" rx="4"></rect>
                     <rect id="hamburger" x="0" y="8" width="23" height="5" rx="4"></rect>
                     <rect id="hamburger" x="0" y="16" width="23" height="5" rx="4"></rect>

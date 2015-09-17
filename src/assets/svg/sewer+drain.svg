@@ -19,7 +19,7 @@
                     <path d="M40.5780347,1.2423432 L56.8092486,1.2423432" id="Path-1114-Copy-2" stroke="#4A4A4A"></path>
                     <path d="M40.5780347,79.0543353 L56.8092486,79.0543353" id="Path-1114-Copy" stroke="#4A4A4A"></path>
                 </g>
-                <g id="hamburger-menu" transform="translate(148.000000, 150.000000)" fill="#979797" sketch:type="MSShapeGroup">
+                <g id="hamburger-menu" transform="translate(148.000000, 150.000000)" fill="#3FAAF5" sketch:type="MSShapeGroup">
                     <rect id="hamburger" x="0" y="0" width="23" height="5" rx="4"></rect>
                     <rect id="hamburger" x="0" y="8" width="23" height="5" rx="4"></rect>
                     <rect id="hamburger" x="0" y="16" width="23" height="5" rx="4"></rect>
