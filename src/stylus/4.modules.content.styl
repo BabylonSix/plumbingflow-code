@@ -1,76 +1,64 @@
 $vertical-space = 130*$px
+$vertical-space-iphone = ($vertical-space - 60%)
 $paragraph-space = 34*$px
 $paragraph-size = 22*$px
 $paragraph-lineheight = 34*$px
-$vertical-space-iphone = ($vertical-space - 60%)
 
 .copy
-	padding: 20*$px
+	display: flex
+	flex-direction: column
+	// align-items: center
+	margin: 20*$px
+	margin: 0 auto
+	max-width: 800*$px
+	+below(880px)
+		margin: 0 40*$px
 	// margins
 	margin-bottom: $vertical-space
-	
 	+below(920px)
 			margin-bottom: $vertical-space-iphone
+	+below(440px)
+		margin: 0 20*$px
 
 	&__head
 		display: flex
+		flex-direction: row
 		align-items: center
 		margin-bottom: $paragraph-space
-		+above(960px)
-			width: 990px
-			margin: 0px auto $paragraph-space auto
-
 
 	&__logo
 		width: 130*$px
-		margin-right: 20*$px
-		+above(980px)
-			margin-right: 60*$px
+		+below(376px)
+			width: 80*$px
+			responsive-img()
 
 	&__header
-		font-size: 9vw
-		+above(700px)
+		margin-left: 20*$px
+		font-size: 8.5vw
+		align-self: auto
+		+above(653px)
 			font-size: 44*$px
 
-	&__content
-		max-width: 600px
-		margin: auto
-		display: block
-		+between(768px, 768px)
-			margin-left: 155px
 
 	&__paragraph
 		font-size: $paragraph-size
 		line-height: $paragraph-lineheight
 		margin-bottom: $paragraph-space
 
+
 .social
+	align-self: center
 	display: flex
 	flex-direction: row
 	align-items: center
 	justify-content: space-between
-	width: 280px
+	width: 320px
 	margin-top: $vertical-space
-
-.schedule-service
-	display: block
-	width: 250px
-	font-size: 16*$px
-	font-weight: 600
-	padding: 22*$px
-	border-radius: 4*$px
-	background: red
-	color: white
-	margin: 40*$px auto
-	text-align: center
-	&:hover
-		background: darken(red, 10%)
 
 
 //
 // Schedule Service Page
 //
-
 .schedule-info
 	background-color: darken(hsl(180, 20%, 99%), 2%)
 	margin: ($vertical-space - 60%) auto ($vertical-space - 60%) auto
