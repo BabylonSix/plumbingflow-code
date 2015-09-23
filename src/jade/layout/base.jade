@@ -38,8 +38,14 @@ html(lang='en')
 						h4.gh-cta__phone (786) 393 1771
 
 			header.fh
-				a(href='./index.html'): img.fh-logo(src='img/mini-logo.svg')
-				a.fh-cta(href='./schedule-service.html') Schedule Service
+				if (page === 'index')
+					a(href='./index.html'): img.fh-logo(src='img/mini-logo.svg')
+				else
+					a(href='./index.html'): img.fh-logo-back(src='img/mini-logo-back.svg')
+
+				if (page !== 'schedule')
+					a.fh-cta(href='./schedule-service.html') Schedule Service
+
 				.fh-call (786) 393 1771
 
 
