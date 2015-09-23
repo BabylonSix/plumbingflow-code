@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="17px" height="41px" viewBox="0 0 17 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="38px" height="41px" viewBox="0 0 38 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch Beta 3.4 (15138) - http://www.bohemiancoding.com/sketch -->
     <title>mini-logo</title>
     <desc>Created with Sketch Beta.</desc>
@@ -10,10 +10,12 @@
         </linearGradient>
     </defs>
     <g id="WireFrame-Storyboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="mini-logo" sketch:type="MSLayerGroup">
+        <g id="mini-logo" sketch:type="MSLayerGroup" transform="translate(21.000000, 0.000000)">
             <path d="M0,25.875 L0,40.5 L3.14818661,40.5 L3.14818661,34.457458 L10.3582553,34.457458 L10.3582553,31.9585084 L3.14818661,31.9585084 L3.14818661,28.5787815 L11.280654,28.5787815 L11.280654,25.875 L0,25.875 Z" id="F" fill="#0F6EDC" sketch:type="MSShapeGroup"></path>
             <path d="M3.25780759,6.88235294 L3.25780759,2.49894958 L5.78935234,2.49894958 C6.16286081,2.49894958 6.52253023,2.52626023 6.86837141,2.58088235 C7.21421259,2.63550447 7.51854826,2.74133325 7.78138755,2.89837185 C8.04422684,3.05541045 8.2551868,3.27730949 8.41427374,3.56407563 C8.57336068,3.85084177 8.65290296,4.22636322 8.65290296,4.69065126 C8.65290296,5.1549393 8.57336068,5.53046075 8.41427374,5.81722689 C8.2551868,6.10399303 8.04422684,6.32589207 7.78138755,6.48293067 C7.51854826,6.63996927 7.21421259,6.74579805 6.86837141,6.80042017 C6.52253023,6.85504229 6.16286081,6.88235294 5.78935234,6.88235294 L3.25780759,6.88235294 Z M0,0 L0,14.625 L3.25780759,14.625 L3.25780759,9.38130252 L6.68161811,9.38130252 C7.60847246,9.38130252 8.39697851,9.2481631 9.04715992,8.98188025 C9.69734134,8.71559741 10.2264704,8.36397277 10.634563,7.9269958 C11.0426556,7.49001882 11.3400745,6.98818561 11.5268288,6.42148109 C11.713583,5.85477658 11.8069587,5.27783907 11.8069587,4.69065126 C11.8069587,4.08980792 11.713583,3.50945658 11.5268288,2.94957983 C11.3400745,2.38970308 11.0426556,1.8912837 10.634563,1.45430672 C10.2264704,1.01732975 9.69734134,0.665705113 9.04715992,0.399422269 C8.39697851,0.133139425 7.60847246,0 6.68161811,0 L0,0 Z" id="P" fill="#519DF4" sketch:type="MSShapeGroup"></path>
             <path d="M13.5367847,0 L13.5367847,40.5 L16.9209809,40.5 L16.9209809,0 L13.5367847,0 Z" id="Path" fill="url(#linearGradient-1)" sketch:type="MSShapeGroup"></path>
         </g>
+        <path id="Path-1379" stroke="#979797" sketch:type="MSShapeGroup" d=""></path>
+        <path id="Path-1384" stroke="#979797" sketch:type="MSShapeGroup" d=""></path>
     </g>
 </svg>
