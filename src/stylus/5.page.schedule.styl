@@ -1,0 +1,20 @@
+//
+// Schedule Service Page
+//
+.schedule-info
+	background-color: darken($schedule-info, 2%)
+	margin: ($vertical-space - 60%) auto
+	border-radius: 4*$px
+	padding: 30*$px
+	max-width: 900*$px
+	+below(920px)
+		padding 15*$px
+		margin: ($vertical-space - 75%) auto ($vertical-space - 60%) auto
+	+below(320px)
+		padding: 10*$px
+	&__paragraph
+		font-size: $paragraph-size
+		line-height: $paragraph-space
+		margin-bottom: ($paragraph-space - 30%)
+		&:last-of-type
+			margin-bottom: 0
