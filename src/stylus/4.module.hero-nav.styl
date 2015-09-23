@@ -7,7 +7,7 @@
 	justify-content: space-around
 	align-items: center
 	flex-wrap: wrap
-	background: hsla(0, 0%, 97%, 1)
+	background: $hero-nav-section-bg
 	margin-bottom: $vertical-space-iphone
 	$horizontal-divider-bottom()
 	
@@ -46,11 +46,11 @@
 			display: flex
 			flex-flow: column
 			align-items: center
-			background: hsla(0, 0%, 24%, 96%)
+			background: $hero-nav-bg
 
 	&__info // Container that's shown by default
 		$hero-section()
-		background: hsla(0, 0%, 97%, 1)
+		background: $hero-info-bg
 		position: absolute
 		top: 0
 		z-index: 100
@@ -60,7 +60,7 @@
 
 	&__logo // info containers logo
 		margin-top 30px
-		border 1px solid blue
+		border 1px solid $hero-nav-logo-border
 		border-radius: 8px 
 
 	&__header // info containers header
@@ -112,7 +112,7 @@
 		z-index: 200
 
 	&__link // links to more in depth parts of the section
-		button(hsla(210, 100%, 44%, 1))
+		button($hero-nav-button)
 		text-align: center
 		font-size: 20px
 		font-weight: 400

@@ -9,7 +9,7 @@
 	display: flex
 	container: nowrap
 	justify-content: space-between
-	background: hsl(196, 79%, 96%)
+	background: $header-bg
 	+below(920px)
 		display: none
 
@@ -17,7 +17,7 @@
 .gh-logo
 	gh-height()
 	$horizontal-divider-bottom()
-	background: linear-gradient(to right, $logo-fade-color, $logo-bg-color)
+	background: linear-gradient(to right, $header-fade-bg, $header-bg)
 	padding: 0 40*$px
 	display: flex
 	align-items: center
@@ -50,7 +50,7 @@
 	padding: 0 20*$px
 	min-width: 360px
 	gh-height()
-	background: blue
+	background: $call-us-bg
 
 	&__message
 		width: 330px
