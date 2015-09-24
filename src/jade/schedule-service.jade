@@ -6,11 +6,12 @@ append config
 	- var Description = 'Fill out the requested information and within 2 business hours, you’ll recieve a phonecall or text from one of our representatives to discuss your plumbing problem, and put you into a schedule timeframe that works for you.'
 
 block content
+
 	section.schedule-info
 		p.schedule-info__paragraph Please fill out the requested information below.
 		p.schedule-info__paragraph Within 2 business hours, you’ll recieve a phonecall or text from one of our representatives to discuss your plumbing problem, and put you into a schedule timeframe that works for you.
 
-	section
+	section.schedule-section
 		form(name='contact' action='//formspree.io/formspree@plumbingflow.com' method='POST').form
 			//- Contact
 			fieldset.form__group
