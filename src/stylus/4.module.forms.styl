@@ -19,6 +19,8 @@ $space-between-forms = 60*$px
 		font-size: ($paragraph-size + 6*$px)
 		margin-left: 10*$px
 		margin-bottom: 20*$px
+		+below(430px)
+			margin-left: 6*$px
 
 	&__label
 		transform: translate(26*$px, -38*$px)
@@ -26,7 +28,7 @@ $space-between-forms = 60*$px
 		line-height: $paragraph-lineheight
 		max-width: 70% 
 		z-index: 100
-		+below(420px)
+		+below(430px)
 			transform: translate(12*$px, -38*$px)
 		 
 	&__input
