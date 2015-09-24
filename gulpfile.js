@@ -58,7 +58,7 @@ var secrets      = require('./secrets.json'); // password
 // src files
 var src = {
 	//code assets
-	jade:      ['./src/jade/*.jade', '!./src/jade/layout/**/*.jade'],
+	jade:      ['./src/jade/**/*.jade', '!./src/jade/layout/**/*.jade'],
 	jadeAll:    './src/jade/**/*.jade',
 	stylus:     './src/stylus/style.styl',
 	stylusAll:  './src/stylus/**/*.styl',
