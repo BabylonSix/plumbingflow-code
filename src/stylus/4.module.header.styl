@@ -24,41 +24,41 @@
 		
 		
 // Navigation
-.gh-menu
+.gh-cta
 	gh-height()
 	display: flex
 	align-items: center
 	justify-content: flex-end
-	max-width: 600px
+	max-width: 600*$px
 	padding-right: 20*$px
 	width: 100% 
 	+below(920px)
 		display: none
 
-.gh-nav
+.gh-cta
 		
 	&__link
 		button(red)
-		font-size: 22px
+		font-size: 22*$px
 		font-weight: 600
 
 
 // Call to Action
-.gh-cta
+.gh-hotline
 	display: flex
 	align-items: center
 	padding: 0 20*$px
-	min-width: 360px
+	min-width: 360*$px
 	gh-height()
 	background: $call-us-bg
 
-	&__message
-		width: 330px
+	&__wrapper
+		width: 330*$px
 		text-align: center
 		+below(410px)
-			width: 290px
+			width: 290*$px
 				
-	&__call
+	&__header
 		font-size: 1.46em
 		color: white
 		// margin: 0
@@ -70,5 +70,3 @@
 		color: white
 		// margin: 0
 		color: black
-		+above(420px)
-			font-size: 3em
