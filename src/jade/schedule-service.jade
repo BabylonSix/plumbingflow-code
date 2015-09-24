@@ -8,11 +8,12 @@ append config
 block content
 
 	section.schedule-info
-		p.schedule-info__paragraph Please fill out the requested information below.
-		p.schedule-info__paragraph Within 2 business hours, you’ll recieve a phonecall or text from one of our representatives to discuss your plumbing problem, and put you into a schedule timeframe that works for you.
+		.schedule-info__wrapper
+			p.schedule-info__paragraph Please fill out the requested information below.
+			p.schedule-info__paragraph Within 2 business hours, you’ll recieve a phonecall or text from one of our representatives to discuss your plumbing problem, and put you into a schedule timeframe that works for you.
 
 	section.schedule-section
-		form(name='contact' action='//formspree.io/formspree@plumbingflow.com' method='POST').form
+		form.form(name='contact' action='//formspree.io/formspree@plumbingflow.com' method='POST')
 			//- Contact
 			fieldset.form__group
 				legend.form__group-name Contact

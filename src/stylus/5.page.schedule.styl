@@ -1,22 +1,35 @@
 //
 // Schedule Service Page
 //
-.schedule-info
-	background-color: $schedule-info-bg
-	margin: ( 0 auto $vertical-space - 60%)
-	border-radius: 4*$px
-	padding: 30*$px
-	max-width: 900*$px
-	+below(920px)
-		border-radius: 0
-		padding 15*$px
-		$horizontal-divider-bottom()
-	+below(320px)
-		padding: 10*$px
-	&__paragraph
-		color: $schedule-info-text
-		font-size: $paragraph-size
-		line-height: $paragraph-space
-		margin-bottom: ($paragraph-space - 30%)
-		&:last-of-type
-			margin-bottom: 0
+
+.schedule
+
+	&-info
+		background-color: $schedule-info-bg
+		&__wrapper
+			margin: ( 0 auto)
+			border-radius: 4*$px
+			padding: 30*$px
+			max-width: 900*$px
+			+below(920px)
+				$horizontal-divider-bottom()
+				border-radius: 0
+				padding 45*$px
+			+below(600px)
+				padding: 40*$px 20*$px
+			+below(320px)
+				padding: 10*$px
+
+		&__paragraph
+			color: $schedule-info-text
+			font-size: $paragraph-size
+			line-height: $paragraph-space
+			margin-bottom: $paragraph-space
+			&:last-of-type
+				margin-bottom: 0
+	
+	&-section
+		padding-top: $vertical-space = 80*$px
+		height: 100%
+		width: 100%
+		background: silver
