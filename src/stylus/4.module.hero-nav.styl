@@ -1,5 +1,4 @@
 .hero // Contains the hero nav sections
-	$horizontal-divider-top()
 	$horizontal-divider-bottom()
 	align-items: center
 	background: $hero-nav-section-bg
@@ -13,6 +12,7 @@
 	width: 100%
 	position: relative
 	+above(1280px)
+		$horizontal-divider-top()
 		border-radius: 6*$px 0 6*$px 6*$px
 	&:after
 		background-image: url('/img/banner-top.jpg')

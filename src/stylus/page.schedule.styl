@@ -6,7 +6,8 @@
 
 	&-info
 		$horizontal-divider-bottom()
-		$horizontal-divider-top()
+		+above(1280px)
+			$horizontal-divider-top()
 		background-color: $schedule-info-bg
 		&__wrapper
 			margin: ( 0 auto)
