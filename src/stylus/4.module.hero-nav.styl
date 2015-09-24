@@ -1,15 +1,30 @@
 .hero // Contains the hero nav sections
-	width: 100%
-	height: 100%
-	min-height: 600*$px
+	$horizontal-divider-top()
+	$horizontal-divider-bottom()
+	align-items: center
+	background: $hero-nav-section-bg
 	display: flex
 	flex-direction: row
-	justify-content: space-around
-	align-items: center
 	flex-wrap: wrap
-	background: $hero-nav-section-bg
+	height: 100%
+	justify-content: space-around
 	margin-bottom: $vertical-space-iphone
-	$horizontal-divider-bottom()
+	min-height: 600*$px
+	width: 100%
+	position: relative
+	+above(1280px)
+		border-radius: 6*$px 0 6*$px 6*$px
+	&:after
+		background-image: url('/img/banner-top.jpg')
+		background-size: cover
+		bottom: 0
+		content: ''
+		left: 0
+		opacity: 0.1 
+		position: absolute
+		right: 0
+		top: 0
+		z-index: 0
 	
 	+between(800px, 820px)
 		justify-content: space-between 
@@ -51,7 +66,8 @@
 
 	&__info // Container that's shown by default
 		$hero-section()
-		background: $hero-info-bg
+		background: hsla($hero-info-bg, 90%)
+		backdrop-filter: blur(0.5*$px)
 		position: absolute
 		top: 0
 		z-index: 100

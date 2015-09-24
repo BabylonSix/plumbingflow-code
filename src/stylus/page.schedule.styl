@@ -5,6 +5,8 @@
 .schedule
 
 	&-info
+		$horizontal-divider-bottom()
+		$horizontal-divider-top()
 		background-color: $schedule-info-bg
 		&__wrapper
 			margin: ( 0 auto)
@@ -12,7 +14,6 @@
 			padding: 30*$px
 			max-width: 900*$px
 			+below(920px)
-				$horizontal-divider-bottom()
 				border-radius: 0
 				padding 45*$px
 			+below(600px)
