@@ -6,16 +6,16 @@
 	$horizontal-divider-top()
 	&-menu
 		background: $footer-bg
-		height: 150px
+		height: 150*$px
 		+below(369px)
-			height: 200px
+			height: 200*$px
 		+below(320px)
-			height: 320px 
+			height: 320*$px 
 	
 	&-nav
 		v-align()
-		margin-left: 10px
-		margin-right: 10px
+		margin-left: 10*$px
+		margin-right: 10*$px
 		float: right
 		
 		list-style-type: none
@@ -23,5 +23,5 @@
 			display: inline-block
 		&__link
 			button(blue)
-			font-size: 18px
-			line-height: 58px 
+			font-size: 18*$px
+			line-height: 58*$px 

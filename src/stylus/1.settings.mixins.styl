@@ -12,12 +12,12 @@ v-align()
 button($bt-color = hsl(210, 93%, 62%))
 	color: lighten($bt-color, 95%)
 	background: $bt-color
-	border: 1px solid darken($bt-color, 10%)
-	border-radius: 4px
+	border: 1*$px solid darken($bt-color, 10%)
+	border-radius: 4*$px
 	text-decoration: none
 	white-space: nowrap
-	padding: 10px
-	margin: 4px
+	padding: 10*$px
+	margin: 4*$px
 	&:hover
 		background: darken($bt-color, 20%)
 
@@ -27,7 +27,7 @@ responsive-img()
 	border: 0
 
 $horizontal-divider-bottom()
-	border-bottom: 1px solid $horizontal-rule
+	border-bottom: 1*$px solid $horizontal-rule
 
 $horizontal-divider-top()
-	border-top: 1px solid $horizontal-rule
+	border-top: 1*$px solid $horizontal-rule
