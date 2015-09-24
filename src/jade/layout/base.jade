@@ -29,8 +29,9 @@ html(lang='en')
 					a(href='./index.html'): img.gh-logo__image(src='img/logo.svg' alt='Plumbing Flow')
 
 				nav.gh-menu
-					ul.gh-nav
-						li.gh-nav__item: a.gh-nav__link(href='./schedule-service.html') Schedule Service
+					if (page !== 'schedule')
+						ul.gh-nav
+							li.gh-nav__item: a.gh-nav__link(href='./schedule-service.html') Schedule Service
 
 				.gh-cta
 					article.gh-cta__message
