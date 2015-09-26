@@ -53,15 +53,23 @@
 		+between(800px, 920px)
 			border-radius: 8*$px
 			width: 200*$px
-		+between(600px, 800px)
-			border-radius: 0
-			width: 270*$px
-		+between(414px, 600px)
-			border-radius: 0
-			width: 200*$px
-		+between(360px, 414px)
+			
+		+between(744px, 799px)
 			border-radius: 0
 			width: 186*$px
+			
+		+between(600px, 743px)
+			border-radius: 0
+			width: 270*$px
+		
+		+between(401px, 599px)
+			border-radius: 0
+			width: 200*$px
+			
+		+between(361px, 400px)
+			border-radius: 0
+			width: 186*$px
+		
 		+below(360px)
 			width: 250*$px
 			border-radius: 8*$px
@@ -115,16 +123,20 @@
 
 	&__paragraph // info containers paragraph
 		color: $hero-info-text
-		font-size: 15*$px
+		font-size: 16*$px
 		line-height: 30*$px
-		margin: 15*$px 30*$px
+		margin: 16*$px 30*$px
 		user-select: none
+		font-weight: 300 
 			
 		//special rule
 		// when container width is 200px, make margin smaller
 		+between(800px, 920px)
 			margin: 10*$px 20*$px
+		+between(744px, 800px)
+			margin: 10*$px 14*$px
 		+below(600px)
+			font-size: 15*$px 
 			margin: 10*$px 20*$px
 		// end special rule
 		
