@@ -30,18 +30,17 @@
 		top: 0
 		z-index: 0
 	
-	+between(800px, 820px)
-		justify-content: space-between 
-	+between(372px, 420px)
+	+below(960px)
 		justify-content: space-between
+		
 	
 	&__header
-		font-size: 6vw + 4vh + 2vmin
+		font-size: 5vw + 4vh + 2vmin
 		font-weight: 800  
 		color: #fff 
 		width: 100%
 		text-align: center
-		+above(1180px)
+		+above(1260px)
 			font-size: 140px 
 		
 			
@@ -49,7 +48,7 @@
 	$hero-section()
 		border-radius: 8*$px
 		width: 230*$px
-		height: 500*$px
+		height: 520*$px
 		+between(800px, 920px)
 			border-radius: 8*$px
 			width: 200*$px
@@ -80,7 +79,7 @@
 		
 		&-header // info containers header
 			color: $hero-info-text
-			font-size: 30px
+			font-size: 28px
 			font-weight: 400
 			margin-top 30px
 			user-select: none
@@ -167,7 +166,7 @@
 		+below(600px)
 			font-weight: 300
 
-		$vertical-gutter = 30*$px // control the vertical gutter
+		$vertical-gutter = 32*$px // control the vertical gutter
 		margin-bottom: $vertical-gutter
 		&:first-of-type
 			margin-top: $vertical-gutter
