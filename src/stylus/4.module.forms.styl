@@ -1,32 +1,32 @@
 $space-between-forms = 60*$px
 	
 .form
+	margin: auto
 	max-width: 440*$px
 	width: 100%
-	margin: auto
 	z-index: 100
 	
 	&__group
 		background-color: darken($form-group, 3%)
-		border: 0
 		border-radius: 4*$px
-		padding: 6*$px
+		border: 0
 		margin-bottom: $space-between-forms
+		padding: 6*$px
 
 	&__group-name
+		font-size: ($paragraph-size + 6*$px)
 		font-style: bold
 		font-weight: 800 
-		font-size: ($paragraph-size + 6*$px)
-		margin-left: 10*$px
 		margin-bottom: 20*$px
+		margin-left: 10*$px
 		+below(430px)
 			margin-left: 6*$px
 
 	&__label
-		transform: translate(26*$px, -38*$px)
 		font-size: $paragraph-size
 		line-height: $paragraph-lineheight
 		max-width: 70% 
+		transform: translate(26*$px, -38*$px)
 		z-index: 100
 		+below(430px)
 			transform: translate(12*$px, -38*$px)
