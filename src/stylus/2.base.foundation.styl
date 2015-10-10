@@ -1,10 +1,8 @@
 html
-  -moz-text-size-adjust: 100%
-  -ms-text-size-adjust: 100%
-  -webkit-text-size-adjust: 100%
-  -webkit-font-smoothing: antialiased
-  -moz-osx-font-smoothing: grayscale
-  -webkit-tap-highlight-color: transparent
+  font-smoothing: antialiased
+  osx-font-smoothing: grayscale
+  tap-highlight-color: transparent
+  text-size-adjust: 100%
 
 body
   margin: 0
@@ -12,6 +10,7 @@ body
 
 iframe
   border: 0
+  
 
 h1, h2, h3, h4, h5, p, ul, ol, blockquote, figure, button
   margin: 0
@@ -41,17 +40,17 @@ a
   text-decoration: none
 
 button
-  overflow: visible
-  border: 0
-  font: inherit
-  letter-spacing: inherit
   background: none
+  border: 0
   cursor: pointer
-  -webkit-font-smoothing: inherit
+  font: inherit
+  font-smoothing: inherit
+  letter-spacing: inherit
+  overflow: visible
   &:focus
     outline: 0
   
 
 ::-moz-focus-inner
-  padding: 0
   border: 0
+  padding: 0
