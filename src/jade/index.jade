@@ -1,50 +1,41 @@
-extends layout/base.jade
+extends views/default
 
 append config
-	- var page = 'index'
-	- var PageTitle = 'Plumbing Flow | Home'
+	- var PageTitle = 'Home'
 	- var Description = 'The Best Plumbers in Miami Florida! We\'re here to help YOU!'
 
-block content
+block site-content
 
-	include layout/nav
+	include views/partials/nav
 
 	main.content-area
-		section.copy
-			.copy__head
-				img.copy__logo(src='/img/five-stars.svg')
-				h2.copy__header Excellent Workmanship
-			.copy__content
-				p.copy__paragraph We are a family owned and operated plumbing services company, and
-					| We like to make our money the old fasioned way,
-					| By delivering high quality, uncompromised
-					| service and workmanship, with no shortcuts.
-				p.copy__paragraph We are professional plumbers, respectful people, and on time.
-				p.copy__paragraph If your pipes are clogged and need to be cleaned, we can do that.
-				p.copy__paragraph If your water is not flowing properly, we can fix that.
-				p.copy__paragraph If you need a bathroom remodeled, we can do that too
-				p.copy__paragraph Bottom line: We provide solutions to your problems.
 
-		section.copy
-			.copy__head
-				img.copy__logo(src='/img/time.svg')
-				h2.copy__header Your time is valuable
-			.copy__content
-				p.copy__paragraph We understand that life is complicated,
-					| So we do everything in our power to
-					| be on time, on track, to provide services you need.
+		+page-section('Excellent Workmanship', 'five-stars.svg')
+				+p.
+					We are a family owned and operated plumbing services company, and
+					We like to make our money the old fasioned way,
+					By delivering high quality, uncompromised
+					service and workmanship, with no shortcuts.
+				+p We are professional plumbers, respectful people, and on time.
+				+p If your pipes are clogged and need to be cleaned, we can do that.
+				+p If your water is not flowing properly, we can fix that.
+				+p If you need a bathroom remodeled, we can do that too
+				+p Bottom line: We provide solutions to your problems.
 
-		section.copy
-			.copy__head
-				img.copy__logo(src='/img/payment.svg')
-				h2.copy__header We’ve got you covered
-			.copy__content
-				p.copy__paragraph When emergencies happen,
-					| You can rely on us.
-					| We accept multiple forms of
-					| payment options, so you wont
-					| be left in the cold.
-				p.copy__paragraph We’ll help you on the spot.
+		+page-section('Your time is valuable', 'time.svg')
+				+p.
+					We understand that life is complicated,
+					So we do everything in our power to
+					be on time, on track, to provide services you need.
+
+		+page-section('We’ve got you covered', 'payment.svg')
+				+p.
+					When emergencies happen,
+					You can rely on us.
+					We accept multiple forms of
+					payment options, so you wont
+					be left in the cold.
+				+p We’ll help you on the spot.
 
 			section.social
 				p.social__cta find us on:

@@ -1,0 +1,13 @@
+extends default.jade
+
+block site-content
+
+	//- Page Variables
+	- var urlReadyPageTitle = PageTitle.toLowerCase().replace(/ /g, '-')
+
+	//- include nav
+
+	include partials/hero.jade
+
+	main.content-area
+		block page-content

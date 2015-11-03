@@ -1,0 +1,18 @@
+//- variables + overides
+block config
+	include config
+
+
+doctype html
+include mixins/index
+
+html(lang='en')
+	include layout/site-head
+
+	body
+		.g-wrapper
+			include layout/site-header
+			include layout/site-content
+			include layout/site-footer
+
+			script(src='/js/app.js' defer)

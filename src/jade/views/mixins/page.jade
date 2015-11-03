@@ -1,0 +1,18 @@
+mixin page-section(title, img)
+	section.copy
+		.copy__head
+			if img
+				img.copy__logo(src= '/img/' + img )
+
+			if title
+				h2.copy__header= title
+			else
+				h2.copy__header Add Section Title
+
+		.copy__content
+			block
+
+
+mixin p
+	p.copy__paragraph
+		block

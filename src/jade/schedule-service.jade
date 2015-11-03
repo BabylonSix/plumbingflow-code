@@ -1,13 +1,10 @@
-extends layout/base.jade
+extends views/default.jade
 
 append config
-	- var page = 'schedule'
-	- var PageTitle = 'Plumbing Flow | Schedule Services'
+	- var PageTitle = 'Schedule Services'
 	- var Description = 'Fill out the requested information and within 2 business hours, you’ll recieve a phonecall or text from one of our representatives to discuss your plumbing problem, and put you into a schedule timeframe that works for you.'
 
-block content
-
-	//- include layout/nav
+block site-content
 
 	section.schedule-info
 		.schedule-info__wrapper

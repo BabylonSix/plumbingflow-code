@@ -1,0 +1,24 @@
+header.gh
+	.gh-logo
+		a(href='/index.html'): img.gh-logo__image(src='/img/logo.svg' alt='Plumbing Flow')
+
+	nav.gh-cta
+		if (page !== 'schedule')
+			ul.gh-nav
+				li.gh-cta__item: a.gh-cta__link(href='/schedule-service.html') Schedule Service
+
+	.gh-hotline
+		article.gh-hotline__wrapper
+			h4.gh-hotline__header Plumbing Service Hotline
+			h4.gh-hotline__phone (786) 393 1771
+
+header.fh
+	if (page === 'index')
+		a(href='/index.html'): img.fh-logo(src='/img/mini-logo.svg')
+	else
+		a(href='/index.html'): img.fh-logo-back(src='/img/mini-logo-back.svg')
+
+	if (page !== 'schedule')
+		a.fh-cta(href='/schedule-service.html') Schedule Service
+
+	.fh-call (786) 393 1771

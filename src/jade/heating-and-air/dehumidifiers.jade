@@ -1,24 +1,14 @@
-extends ../layout/base.jade
+extends ../views/page
 
 append config
-	- var page = 'dehumidifier'
-	- var PageTitle = 'Plumbing Flow | Dehumidifier'
+	- var PageTitle = 'Dehumidifiers'
 	- var Description = ''
 
-block content
+block page-content
 
-	//- include ../layout/nav
-
-	.hero.hero-half-height
-		.hero__header Dehumidifiers
-
-	main.content-area
-		section.copy
-			.copy__head
-				img.copy__logo(src='/img/five-stars.svg')
-				h2.copy__header Excellent Workmanship
-			.copy__content
-				p.copy__paragraph We are a family owned and operated plumbing services company, and
-					| We like to make our money the old fasioned way,
-					| By delivering high quality, uncompromised
-					| service and workmanship, with no shortcuts.
+	+page-section('Excellent Workmanship', 'five-stars.svg')
+		+p.
+			We are a family owned and operated plumbing services company, and
+			We like to make our money the old fasioned way,
+			By delivering high quality, uncompromised
+			service and workmanship, with no shortcuts.
