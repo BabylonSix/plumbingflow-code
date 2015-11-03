@@ -55,10 +55,11 @@ var secrets      = require('./secrets.json'); // password
 // Source and Destination Files
 //
 
+
 // src files
 var src = {
 	//code assets
-	jade:      ['./src/jade/**/*.jade', '!./src/jade/layout/**/*.jade'],
+	jade:      ['./src/jade/**/*.jade', '!./src/jade/views/**/*.jade'],
 	jadeAll:    './src/jade/**/*.jade',
 	stylus:     './src/stylus/style.styl',
 	stylusAll:  './src/stylus/**/*.styl',
@@ -90,6 +91,7 @@ var siteURL = {
 //
 // Gulp Tasks
 //
+
 
 // Jade >> HTML
 gulp.task('jade', function() {
@@ -190,6 +192,7 @@ gulp.task( 'default', ['jade', 'stylus', 'js', 'svg', 'jpeg', 'png'], function()
 //
 // Production Gulp Tasks
 //
+
 
 // production directories
 var pro = {
