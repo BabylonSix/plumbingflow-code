@@ -7,7 +7,6 @@
 	align-items: center
 	background: $hero-nav-section-bg
 	display: flex
-	flex-direction: row
 	flex-wrap: wrap
 	height: 100%
 	justify-content: space-around
@@ -21,62 +20,69 @@
 		background-position: center
 		background-repeat: no-repeat
 		background-size: cover
-		bottom: 0
 		content: ''
-		left: 0
-		opacity: 0.18 
-		position: absolute
-		right: 0
 		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		opacity: 0.18
 		z-index: 0
-	
+		position: absolute
+
 	+below(960px)
 		justify-content: space-between
-		
-	
+
+
 	&__header
 		font-size: 4.5vw + 4vh + 2vmin
-		font-weight: 800  
-		color: white 
+		font-weight: 800
+		color: white
 		width: 100%
 		text-align: center
 		+above(1260px)
-			font-size: 140px 
-		
-			
+			font-size: 140px
+
+
 	// How the hero section looks at different sizes
-	$hero-section()
+	$hero-section-width()
 		border-radius: 8*$px
 		width: 230*$px
 		height: 520*$px
 		+between(800px, 920px)
 			border-radius: 8*$px
 			width: 200*$px
-			
+
 		+between(744px, 799px)
 			border-radius: 0
 			width: 186*$px
-			
-		+between(600px, 743px)
+
+		+below(744px)
+			width: 48vw
 			border-radius: 0
-			width: 270*$px
-		
-		+between(401px, 599px)
-			border-radius: 0
-			width: 200*$px
-			
-		+between(361px, 400px)
-			border-radius: 0
-			width: 186*$px
-		
-		+below(360px)
-			width: 250*$px
-			border-radius: 8*$px
+
+		+below(380px)
+			width: 90vw
+
+		// +between(600px, 743px)
+		// 	border-radius: 0
+		// 	width: 270*$px
+		//
+		// +between(401px, 599px)
+		// 	border-radius: 0
+		// 	width: 200*$px
+		//
+		// +between(361px, 400px)
+		// 	border-radius: 0
+		// 	width: 186*$px
+		//
+		// +below(360px)
+		// 	width: 250*$px
+		// 	border-radius: 8*$px
 
 	&__section // A hero nav section, eg: plumbing, sewer & drain, etc
-		$hero-section()
+		$hero-section-width()
 		position: relative
-		
+
 		&-header // info containers header
 			color: $hero-info-text
 			font-size: 28px
@@ -92,7 +98,7 @@
 			background: $hero-nav-bg
 
 	&__info // Container that's shown by default
-		$hero-section()
+		$hero-section-width()
 		background: hsla($hero-info-bg, 90%)
 		position: absolute
 		top: 0
@@ -104,8 +110,8 @@
 	&__logo // info containers logo
 		margin-top 30px
 		border 1px solid $hero-nav-logo-border
-		border-radius: 14px 
-		
+		border-radius: 14px
+
 		// special rule
 		// when container width is 200px, make margin smaller
 		+between(800px, 920px)
@@ -114,11 +120,11 @@
 			margin-top 20px
 		// end special rule
 		// iPhone 4, 4c, 4s
-		
+
 		+below(320px)
 			font-size: 36px
 			margin-top 20px
-		
+
 
 	&__paragraph // info containers paragraph
 		color: $hero-info-text
@@ -126,8 +132,8 @@
 		line-height: 30*$px
 		margin: 16*$px 30*$px
 		user-select: none
-		font-weight: 300 
-			
+		font-weight: 300
+
 		//special rule
 		// when container width is 200px, make margin smaller
 		+between(800px, 920px)
@@ -135,19 +141,19 @@
 		+between(744px, 800px)
 			margin: 10*$px 14*$px
 		+below(600px)
-			font-size: 15*$px 
+			font-size: 15*$px
 			margin: 10*$px 20*$px
 		// end special rule
-		
+
 		// iPhone 4, 4c, 4s
 		+below(320px)
 			font-size: 18*$px
 			line-height: 30*$px
 			margin-top 20*$px
-			
+
 
 	&__nav // Container that's shown when hero section is hovered over
-		$hero-section()
+		$hero-section-width()
 		display: none
 		position: absolute
 		top: 0
