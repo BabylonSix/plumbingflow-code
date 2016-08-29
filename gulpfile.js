@@ -47,7 +47,6 @@ var zopfli       = require('gulp-zopfli'); // gzips files
 
 // Deployment
 var ftp          = require('vinyl-ftp');
-var secrets      = require('./secrets.json'); // password
 
 
 
@@ -275,10 +274,6 @@ gulp.task( 'pro', ['pro_jade', 'pro_stylus', 'pro_js', 'pro_svg', 'pro_jpeg', 'p
 gulp.task( 'deploy', () => {
 
 var connection = ftp.create( {
-	host:     secrets.servers.production.serverhost,
-	user:     secrets.servers.production.username,
-	password: secrets.servers.production.password,
-	parallel: 10
 } );
 
 var globs = [
@@ -286,8 +281,6 @@ var globs = [
 ];
 
 return gulp.src( globs, { base: './production/', buffer: false } )
-	.pipe( connection.newer( secrets.servers.production.remotepath) )   // only upload newer files
-	.pipe( connection.dest( secrets.servers.production.remotepath ) );
 
 } );
 
