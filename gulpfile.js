@@ -73,10 +73,10 @@ const src = {
 
 // build directories
 const build = {
-	html: './build/',
-	css:  './build/css/',
-	js:   './build/js/',
-	img:  './build/img/'
+	html: '../build/',
+	css:  '../build/css/',
+	js:   '../build/js/',
+	img:  '../build/img/'
 };
 
 // sitemap site url
@@ -183,10 +183,10 @@ gulp.task( 'default', ['jade', 'stylus', 'js', 'svg', 'jpeg', 'png'], () => {
 
 // production directories
 var pro = {
-	html: 'production/',
-	css:  'production/css/',
-	js:   'production/js/',
-	img:  'production/img/'
+	html: '../production/',
+	css:  '../production/css/',
+	js:   '../production/js/',
+	img:  '../production/img/'
 };
 
 
@@ -280,7 +280,7 @@ var globs = [
 	'production/**' // upload everything in the production folder
 ];
 
-return gulp.src( globs, { base: './production/', buffer: false } )
+return gulp.src( globs, { base: '../production/', buffer: false } )
 
 } );
 
