@@ -198,7 +198,6 @@ gulp.task('pro_jade', () => {
 		.pipe(minifyHTML({
 			conditionals: true
 		}))
-		.pipe(zopfli())
 		.pipe(gulp.dest(pro.html));
 });
 
@@ -218,7 +217,6 @@ gulp.task('pro_stylus', () => {
 		]))
 		.pipe(combineMQ())
 		.pipe(minifyCSS({ structureMinimization: true }))
-		.pipe(zopfli())
 		.pipe(gulp.dest(pro.css));
 });
 
@@ -227,7 +225,6 @@ gulp.task('pro_stylus', () => {
 gulp.task('pro_js', () => {
 	return gulp.src(src.js)
 		.pipe(plumber())
-		.pipe(zopfli())
 		.pipe(gulp.dest(pro.js));
 });
 
@@ -238,7 +235,6 @@ gulp.task('pro_svg', () => {
 	return gulp.src(src.svg)
 		.pipe(plumber())
 		.pipe(svgo()())
-		.pipe(zopfli({ numiterations: 15 }))
 		.pipe(gulp.dest(pro.img));
 });
 
