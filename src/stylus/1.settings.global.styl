@@ -1,7 +1,7 @@
 $base_font_size = 16
 $px = ( 1 / $base_font_size ) rem
 $px_em = ( 1 / $base_font_size ) em
-
+$global-transition-duration = 1s
 
 // px to rem or em conversion function
 px( val, base='none' )
@@ -9,7 +9,7 @@ px( val, base='none' )
 	// if new base font size is NOT introduced, use rems
 	if base == 'none'
 		( val / $base_font_size ) rem
-		
+
 	// if new base font size IS introduced, use ems
 	else
 		( val / base ) em
