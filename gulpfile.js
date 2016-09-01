@@ -161,7 +161,7 @@ gulp.task('png', () => {
 gulp.task( 'default', ['jade', 'stylus', 'js', 'svg', 'jpeg', 'png'], () => {
 
 	browserSync.init({
-		server: 'build/'
+		server: '../build/'
 	});
 
 	gulp.watch( src.jadeAll,   [ 'jade'   ]);
